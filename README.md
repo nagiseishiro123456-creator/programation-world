@@ -43,6 +43,8 @@ python tools/art-preview/build-avatar-head-data.py --check
 
 La automatización de [GitHub Actions](https://github.com/nagiseishiro123456-creator/programation-world/actions) ejecuta estos controles en Linux y Windows con Node.js 24 y Python 3.13. Son versiones de herramientas de verificación; todavía no fijan las dependencias del futuro cliente del juego. No requiere instalar paquetes con npm ni pip.
 
+La [verificación de la integración](https://github.com/nagiseishiro123456-creator/programation-world/actions/runs/39492489517) pasó en ambos sistemas sobre el commit [1cb3d39](https://github.com/nagiseishiro123456-creator/programation-world/commit/1cb3d39c60a7f07921dfa8cbcd59b7b487003388).
+
 Los controles verifican rutas, JSON, fuentes, snapshots y composición de píxeles. El adaptador DOM/Canvas comprueba el flujo del controlador; las pruebas de navegador real y aceptación visual se registran aparte. Consultar [la auditoría de importación](docs/qa/github-import-review-v01.md).
 
 ## Documentación

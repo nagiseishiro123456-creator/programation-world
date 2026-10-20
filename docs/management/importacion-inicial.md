@@ -4,7 +4,8 @@
 - Fecha: 2026-10-20.
 - Repositorio: https://github.com/nagiseishiro123456-creator/programation-world.
 - Carga del usuario: [08071eb](https://github.com/nagiseishiro123456-creator/programation-world/commit/08071ebd869dddef62856ec791210ca5d688799f).
-- Estado: archivos recibidos; integración de las carpetas en la raíz y verificaciones documentadas en esta revisión.
+- Integración: [1cb3d39](https://github.com/nagiseishiro123456-creator/programation-world/commit/1cb3d39c60a7f07921dfa8cbcd59b7b487003388).
+- Estado: contenido integrado en la raíz; verificaciones automatizadas superadas en Linux y Windows.
 
 ## Autorización vigente
 
@@ -40,7 +41,7 @@ Esta revisión usa los archivos publicados en GitHub; no repite la lectura del Z
 | Original, A y B | Conceptos aprobados. |
 | Composición nativa de A | Cabeza y cabello separados; pendiente de revisión visual y navegador real. |
 | Verificaciones de esta revisión | Sintaxis, snapshots, 120 composiciones y controlador comprobados en V8. |
-| Controles completos en Node y Python | Automatizados en GitHub Actions; consultar el resultado de la revisión correspondiente. |
+| Controles completos en Node y Python | Superados en Linux y Windows; [ejecución 39492489517](https://github.com/nagiseishiro123456-creator/programation-world/actions/runs/39492489517). |
 | Capas nativas de B | Pendientes. |
 | Cliente Phaser, mapa, formación, cuentas, servidor y chat | Pendientes de implementación. |
 

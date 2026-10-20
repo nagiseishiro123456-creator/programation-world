@@ -1,36 +1,8 @@
 {
   "passed": true,
   "date": "2026-10-20",
-  "environment": "V8 aislado de functions.exec; fuentes leídas desde GitHub",
   "sourceCommit": "08071ebd869dddef62856ec791210ca5d688799f",
-  "checks": [
-    "Sintaxis de 14 archivos JavaScript",
-    "Snapshots de reposo, marcha, colores y capas coinciden con los JSON",
-    "120 composiciones: original exacto, ojos aprobados, cuerpo desde fila 22 e identidad de cabeza durante marcha",
-    "3 colores: transparencia, regiones protegidas y JSON de apariencia",
-    "Tiempo de cuadros, vuelta del ciclo y direcciones del movimiento"
-  ],
-  "testedCompositions": 120,
-  "jackets": 3,
   "browserExecuted": false,
-  "nodeExecuted": false,
-  "pythonExecuted": false,
-  "sourcePngHashesRecomputed": false,
-  "controllerAdapter": {
-    "passed": true,
-    "environment": "V8 con adaptador DOM/Canvas mínimo",
-    "checks": [
-      "Inicio",
-      "Direcciones y colores",
-      "Reproducción",
-      "Paso manual y ciclo",
-      "Capas y restauración",
-      "Regreso a reposo"
-    ],
-    "browserExecuted": false,
-    "layoutTested": false,
-    "canvasPixelsTested": false
-  },
   "scope": "Revisión de la importación a GitHub",
   "sourceImportedFiles": 93,
   "binaryBlobsToPreserve": 36,
@@ -220,13 +192,93 @@
   "archiveReopened": false,
   "githubActions": {
     "workflow": ".github/workflows/verify.yml",
-    "status": "pending_remote_execution",
+    "status": "completed",
+    "conclusion": "success",
+    "runId": 39492489517,
+    "url": "https://github.com/nagiseishiro123456-creator/programation-world/actions/runs/39492489517",
+    "headSha": "1cb3d39c60a7f07921dfa8cbcd59b7b487003388",
     "os": [
       "ubuntu-latest",
       "windows-latest"
     ],
     "node": "24",
-    "python": "3.13"
+    "python": "3.13",
+    "nodeExecuted": true,
+    "pythonExecuted": true,
+    "activeSourceAndExportHashesVerified": true,
+    "browserExecuted": false,
+    "jobs": [
+      {
+        "id": 118869004217,
+        "name": "Recursos y contratos (windows-latest)",
+        "conclusion": "success",
+        "checks": [
+          {
+            "name": "Verificar rutas y JSON",
+            "conclusion": "success"
+          },
+          {
+            "name": "Verificar marcha",
+            "conclusion": "success"
+          },
+          {
+            "name": "Verificar colores",
+            "conclusion": "success"
+          },
+          {
+            "name": "Verificar composición de cabeza y cabello",
+            "conclusion": "success"
+          },
+          {
+            "name": "Verificar flujo del controlador",
+            "conclusion": "success"
+          },
+          {
+            "name": "Verificar datos de colores",
+            "conclusion": "success"
+          },
+          {
+            "name": "Verificar datos de cabeza",
+            "conclusion": "success"
+          }
+        ]
+      },
+      {
+        "id": 118869004511,
+        "name": "Recursos y contratos (ubuntu-latest)",
+        "conclusion": "success",
+        "checks": [
+          {
+            "name": "Verificar rutas y JSON",
+            "conclusion": "success"
+          },
+          {
+            "name": "Verificar marcha",
+            "conclusion": "success"
+          },
+          {
+            "name": "Verificar colores",
+            "conclusion": "success"
+          },
+          {
+            "name": "Verificar composición de cabeza y cabello",
+            "conclusion": "success"
+          },
+          {
+            "name": "Verificar flujo del controlador",
+            "conclusion": "success"
+          },
+          {
+            "name": "Verificar datos de colores",
+            "conclusion": "success"
+          },
+          {
+            "name": "Verificar datos de cabeza",
+            "conclusion": "success"
+          }
+        ]
+      }
+    ]
   },
   "manualVisualApproval": "pending_product_owner_review",
   "repositoryIntegrity": {
@@ -235,5 +287,47 @@
     "jsonFiles": 21,
     "internalLinks": 125,
     "errors": []
+  },
+  "v8Validation": {
+    "passed": true,
+    "date": "2026-10-20",
+    "environment": "V8 aislado de functions.exec; fuentes leídas desde GitHub",
+    "sourceCommit": "08071ebd869dddef62856ec791210ca5d688799f",
+    "checks": [
+      "Sintaxis de 14 archivos JavaScript",
+      "Snapshots de reposo, marcha, colores y capas coinciden con los JSON",
+      "120 composiciones: original exacto, ojos aprobados, cuerpo desde fila 22 e identidad de cabeza durante marcha",
+      "3 colores: transparencia, regiones protegidas y JSON de apariencia",
+      "Tiempo de cuadros, vuelta del ciclo y direcciones del movimiento"
+    ],
+    "testedCompositions": 120,
+    "jackets": 3,
+    "browserExecuted": false,
+    "nodeExecuted": false,
+    "pythonExecuted": false,
+    "sourcePngHashesRecomputed": false,
+    "controllerAdapter": {
+      "passed": true,
+      "environment": "V8 con adaptador DOM/Canvas mínimo",
+      "checks": [
+        "Inicio",
+        "Direcciones y colores",
+        "Reproducción",
+        "Paso manual y ciclo",
+        "Capas y restauración",
+        "Regreso a reposo"
+      ],
+      "browserExecuted": false,
+      "layoutTested": false,
+      "canvasPixelsTested": false
+    }
+  },
+  "remoteIntegration": {
+    "passed": true,
+    "commit": "1cb3d39c60a7f07921dfa8cbcd59b7b487003388",
+    "textFilesByteVerified": 66,
+    "binaryBlobsPreserved": 36,
+    "files": 102,
+    "wrapperRemoved": true
   }
 }

@@ -45,6 +45,14 @@ La matriz usa Linux y Windows, Node.js 24 y Python 3.13. Las acciones oficiales 
 
 La ejecución remota y sus resultados se vinculan al commit comprobado. La presencia del workflow por sí sola no demuestra que sus controles hayan pasado.
 
+## Resultado remoto confirmado
+
+La [ejecución 39492489517](https://github.com/nagiseishiro123456-creator/programation-world/actions/runs/39492489517) terminó con éxito sobre [1cb3d39](https://github.com/nagiseishiro123456-creator/programation-world/commit/1cb3d39c60a7f07921dfa8cbcd59b7b487003388). Pasaron las siete comprobaciones en ambos sistemas: integridad, marcha, colores, capas, controlador y los dos snapshots Python. Se verificaron también los hashes de las fuentes y exportaciones activas que comprueban los scripts.
+
+El árbol incorporado contiene 102 archivos. Sus 66 archivos de texto se comprobaron por hash Git frente al contenido preparado; los 36 binarios conservan los objetos de la carga original. El verificador de integridad comprobó 21 JSON y 125 referencias locales sin errores.
+
+Este resultado corresponde a los controles automatizados de preproducción. La revisión de navegador, disposición visual y aceptación de A sigue pendiente.
+
 ## Revisión visual pendiente
 
 ![Original y primera producción de A](avatar-head-layers-a-v01-comparison.png)

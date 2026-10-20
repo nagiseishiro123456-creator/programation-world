@@ -6,7 +6,7 @@ Videojuego educativo 2D para navegador inspirado en Juliaca. El recorrido previs
 
 **Sprint 0: preproducción y herramientas del avatar.** Están aprobados visualmente la dirección de arte, el campus, el reposo v04, la marcha v01, los tres colores de abrigo y los conceptos de cabello original, A y B.
 
-A tiene una primera producción nativa por capas. Su aspecto final y sus controles requieren revisión en un navegador real. B conserva su concepto aprobado; sus capas siguen pendientes. El mundo jugable, el cliente Phaser, la ejecución educativa de Python, las cuentas, el servidor y el chat todavía no están implementados.
+A tiene producción nativa por capas. La revisión v02 refina el frente con mechones y contraste más definidos, siguiendo la referencia aportada. Su aceptación visual y los controles en navegador real siguen pendientes. B conserva su concepto aprobado; sus capas siguen pendientes. El mundo jugable, el cliente Phaser, la ejecución educativa de Python, las cuentas, el servidor y el chat todavía no están implementados.
 
 El proyecto se conserva en [GitHub](https://github.com/nagiseishiro123456-creator/programation-world). Desde el 2026-10-20 el Product Owner autoriza al asistente a incorporar avances y documentación dentro del alcance acordado. El [registro de importación](docs/management/importacion-inicial.md) identifica la carga inicial y la revisión.
 
@@ -23,9 +23,9 @@ Clonar el repositorio o descargar su contenido completo. Abrir estos archivos de
 
 Los enlaces de GitHub muestran el código HTML; para interactuar hay que abrir el archivo de la copia local. Estos visores funcionan sin servidor ni paquetes instalados. Son herramientas de preproducción.
 
-![Comparación del original y A](docs/qa/avatar-head-layers-a-v01-comparison.png)
+![A anterior, frente refinado y referencia](docs/qa/avatar-front-v02-comparison.png)
 
-La imagen compara el original verde con A verde, azul y terracota. Es una renderización de referencia, no una captura de navegador. El contrato conserva cuadros de 32 × 48, anclaje (16, 46), cuatro direcciones y los ojos aprobados.
+La imagen compara A v01, el frente refinado de A v02 y la referencia aportada. Debajo aparecen los tres colores aprobados de la revisión. Es una renderización de referencia, no una captura de navegador. El contrato conserva cuadros de 32 × 48, anclaje (16, 46), cuatro direcciones y los ojos aprobados.
 
 ## Comprobar el proyecto
 
@@ -62,7 +62,8 @@ Los controles verifican rutas, JSON, fuentes, snapshots y composición de píxel
 | [Marcha](docs/design/avatar-walk-review-v01.md) | Ciclos, controles y aprobación. |
 | [Colores](docs/design/avatar-customization-v01.md) | Opciones aprobadas y archivo de apariencia v01. |
 | [Peinados](docs/design/avatar-hair-review-v01.md) | Original, A y B; secuencia de producción. |
-| [Capas de A](docs/design/avatar-head-layers-a-v01.md) | Composición, procedencia y revisión pendiente. |
+| [Capas de A v01](docs/design/avatar-head-layers-a-v01.md) | Composición inicial y procedencia. |
+| [Frente de A v02](docs/design/avatar-front-review-v02.md) | Refinamiento frontal, antes/después y verificaciones. |
 | [Índice de imágenes](art/references/README.md) | Referencias originales e inventario. |
 
 ## Decisiones vigentes
@@ -75,7 +76,7 @@ Los controles verifican rutas, JSON, fuentes, snapshots y composición de píxel
 - Multijugador y chat de texto como requisitos; voz por proximidad y celulares para después.
 - Sprints de dos semanas; disponibilidad indicada de dos horas diarias, con días efectivos pendientes de acordar.
 
-El siguiente paso visual es revisar A a tamaño nativo y en marcha. Después corresponde producir B y completar el selector y su guardado. El diseño educativo de Z01 se detallará antes de implementar el recorrido.
+El siguiente paso visual es revisar el frente de A v02 a tamaño nativo y en marcha. Después corresponde producir B y completar el selector y su guardado. El diseño educativo de Z01 se detallará antes de implementar el recorrido.
 
 ## Carpetas actuales
 

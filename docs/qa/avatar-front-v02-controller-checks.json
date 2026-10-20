@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "environment": "Node VM with minimal DOM/Canvas adapter",
+  "checks": [
+    "Startup with original data and both layers",
+    "Four directions and three jacket choices",
+    "Walking playback and manual frame wrap",
+    "Layer toggles and restore",
+    "Return to idle"
+  ],
+  "browserExecuted": false,
+  "layoutTested": false,
+  "canvasPixelsTested": false,
+  "pixelCheckCompanion": "tools/art-preview/check-avatar-head.cjs"
+}

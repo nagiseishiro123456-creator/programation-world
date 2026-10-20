@@ -1,0 +1,391 @@
+{
+  "date": "2026-10-19",
+  "version": "0.4",
+  "scope": "Continuous inner pupils and exterior white strips; actual drawFrame function from the local preview",
+  "renderer": "@napi-rs/canvas (Skia, Node); no browser execution",
+  "sourceImageV01Unmodified": true,
+  "generatedV04PngUnmodified": true,
+  "tests": [
+    {
+      "name": "inline_javascript_syntax",
+      "passed": true
+    },
+    {
+      "name": "embedded_asset_data_matches_manifest_v04",
+      "passed": true
+    },
+    {
+      "name": "source_hashes",
+      "passed": true,
+      "v01": "32efa0437a7f3599d8de9832f06a29e3da81adc4c0a149d9dcb1f30ae35ad8fe",
+      "v04": "7bba6f6bb4aa43e9059b60d70b09472262de5b5e58d3d236169a7b98c828d4b1"
+    },
+    {
+      "name": "white_sclera_and_dark_pupils_in_both_front_eyes",
+      "passed": true,
+      "thresholds": {
+        "whiteMinChannelExclusive": 205,
+        "whiteChannelRangeExclusive": 45,
+        "darkMaxChannelExclusive": 80,
+        "alphaMinExclusive": 220
+      },
+      "originalV01": [
+        {
+          "eye": "viewer_left",
+          "roi": {
+            "x": 12,
+            "y": 15,
+            "width": 3,
+            "height": 2
+          },
+          "whitePixels": [
+            [
+              12,
+              15
+            ],
+            [
+              12,
+              16
+            ]
+          ],
+          "darkPixels": [
+            [
+              13,
+              15
+            ],
+            [
+              14,
+              15
+            ],
+            [
+              13,
+              16
+            ],
+            [
+              14,
+              16
+            ]
+          ]
+        },
+        {
+          "eye": "viewer_right",
+          "roi": {
+            "x": 17,
+            "y": 15,
+            "width": 3,
+            "height": 2
+          },
+          "whitePixels": [
+            [
+              19,
+              15
+            ],
+            [
+              19,
+              16
+            ]
+          ],
+          "darkPixels": [
+            [
+              18,
+              15
+            ],
+            [
+              18,
+              16
+            ]
+          ]
+        }
+      ],
+      "previousV03": [
+        {
+          "eye": "viewer_left",
+          "roi": {
+            "x": 12,
+            "y": 15,
+            "width": 3,
+            "height": 2
+          },
+          "whitePixels": [
+            [
+              12,
+              15
+            ],
+            [
+              12,
+              16
+            ],
+            [
+              13,
+              16
+            ]
+          ],
+          "darkPixels": [
+            [
+              13,
+              15
+            ],
+            [
+              14,
+              15
+            ],
+            [
+              14,
+              16
+            ]
+          ]
+        },
+        {
+          "eye": "viewer_right",
+          "roi": {
+            "x": 17,
+            "y": 15,
+            "width": 3,
+            "height": 2
+          },
+          "whitePixels": [
+            [
+              19,
+              15
+            ],
+            [
+              18,
+              16
+            ],
+            [
+              19,
+              16
+            ]
+          ],
+          "darkPixels": [
+            [
+              17,
+              15
+            ],
+            [
+              18,
+              15
+            ],
+            [
+              17,
+              16
+            ]
+          ]
+        }
+      ],
+      "correctedV04": [
+        {
+          "eye": "viewer_left",
+          "roi": {
+            "x": 12,
+            "y": 15,
+            "width": 3,
+            "height": 2
+          },
+          "whitePixels": [
+            [
+              12,
+              15
+            ],
+            [
+              12,
+              16
+            ]
+          ],
+          "darkPixels": [
+            [
+              13,
+              15
+            ],
+            [
+              14,
+              15
+            ],
+            [
+              13,
+              16
+            ],
+            [
+              14,
+              16
+            ]
+          ]
+        },
+        {
+          "eye": "viewer_right",
+          "roi": {
+            "x": 17,
+            "y": 15,
+            "width": 3,
+            "height": 2
+          },
+          "whitePixels": [
+            [
+              19,
+              15
+            ],
+            [
+              19,
+              16
+            ]
+          ],
+          "darkPixels": [
+            [
+              17,
+              15
+            ],
+            [
+              18,
+              15
+            ],
+            [
+              17,
+              16
+            ],
+            [
+              18,
+              16
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "reference_layout_in_both_rows_inner_solid_pupils_outer_sclera",
+      "passed": true,
+      "patternLegend": {
+        "B": "dark",
+        "W": "white"
+      },
+      "rows": [
+        {
+          "y": 15,
+          "viewerLeft": "WBB",
+          "viewerRight": "BBW"
+        },
+        {
+          "y": 16,
+          "viewerLeft": "WBB",
+          "viewerRight": "BBW"
+        }
+      ],
+      "topCap": "dark in both eyes",
+      "sourceSamplingChangeConfinedToEyeRegions": true
+    },
+    {
+      "name": "three_other_views_use_v01_and_match_original_render",
+      "passed": true,
+      "views": [
+        "left",
+        "right",
+        "back"
+      ]
+    },
+    {
+      "name": "four_frames_32x48_and_visible_bounds",
+      "passed": true,
+      "visibleAlphaThresholdExclusive": 32,
+      "frames": [
+        {
+          "view": "front",
+          "canvas": [
+            32,
+            48
+          ],
+          "visibleBounds": {
+            "minX": 6,
+            "minY": 3,
+            "maxX": 25,
+            "maxY": 45
+          },
+          "visiblePixels": 637,
+          "smoothing": false,
+          "source": "art/concepts/avatars/avatar-base-01-v04.png"
+        },
+        {
+          "view": "left",
+          "canvas": [
+            32,
+            48
+          ],
+          "visibleBounds": {
+            "minX": 7,
+            "minY": 3,
+            "maxX": 26,
+            "maxY": 45
+          },
+          "visiblePixels": 530,
+          "smoothing": false,
+          "source": "art/concepts/avatars/avatar-base-01-v01.png"
+        },
+        {
+          "view": "right",
+          "canvas": [
+            32,
+            48
+          ],
+          "visibleBounds": {
+            "minX": 5,
+            "minY": 3,
+            "maxX": 25,
+            "maxY": 45
+          },
+          "visiblePixels": 535,
+          "smoothing": false,
+          "source": "art/concepts/avatars/avatar-base-01-v01.png"
+        },
+        {
+          "view": "back",
+          "canvas": [
+            32,
+            48
+          ],
+          "visibleBounds": {
+            "minX": 6,
+            "minY": 3,
+            "maxX": 25,
+            "maxY": 45
+          },
+          "visiblePixels": 634,
+          "smoothing": false,
+          "source": "art/concepts/avatars/avatar-base-01-v01.png"
+        }
+      ]
+    },
+    {
+      "name": "common_foot_baseline",
+      "passed": true,
+      "anchor": [
+        16,
+        46
+      ],
+      "opaqueBottomRows": [
+        45,
+        45,
+        45,
+        45
+      ]
+    }
+  ],
+  "browser": {
+    "executed": false,
+    "reason": "Chromium executable unavailable in the verification environment",
+    "userEvidence": "Product Owner supplied a close-up defining continuous black inner blocks and white outer strips; v04 local browser review pending",
+    "pending": [
+      "open updated local HTML",
+      "reference eye layout and v03/v04 comparison at native size",
+      "direction, zoom and background controls",
+      "layout and legibility at 1280x720 and 1920x1080"
+    ]
+  },
+  "visualApproval": "approved_visual_base_by_product_owner",
+  "nativeSpritePngExported": true,
+  "gameEngineIntegrationTested": false,
+  "approval": {
+    "date": "2026-10-19",
+    "statement": "este pasa, ahora seguimos",
+    "scope": "Visual appearance of v04; not an automated browser test"
+  },
+  "nativeExportReference": "art/exports/avatars/avatar-base-01-walk-v01.json",
+  "exportVerifiedBy": "docs/qa/avatar-walk-v01-checks.json"
+}

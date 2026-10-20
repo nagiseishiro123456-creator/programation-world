@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "renderedFrames": 80,
+  "eyePatchesEqualAfterCanvas": true,
+  "bodyRows22Through47EqualAfterCanvas": true,
+  "browserExecuted": false,
+  "referenceRenderer": "@napi-rs/canvas 0.1.100"
+}

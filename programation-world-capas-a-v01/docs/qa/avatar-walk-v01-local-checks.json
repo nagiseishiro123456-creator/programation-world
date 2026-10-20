@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "checks": [
+    "JavaScript syntax and local data snapshot",
+    "Source and native atlas SHA-256",
+    "20 native frames and four complete cycles",
+    "Frame timing and loop boundaries",
+    "Idle selection and per-direction cycle order",
+    "Input directions, key release and stage bounds"
+  ],
+  "browserExecuted": false
+}

@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 1,
+  "assetId": "avatar-hair-options",
+  "version": "0.1",
+  "date": "2026-10-19",
+  "reviewStatus": "hair_concepts_visual_approved_by_product_owner",
+  "approvedPrerequisites": [
+    "avatar-base-01 idle v04",
+    "avatar-base-01 walking v01",
+    "green, blue and terracotta jacket colors"
+  ],
+  "source": {
+    "path": "art/concepts/avatars/avatar-hair-options-v01.png",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "bytes": 1496070,
+    "sha256": "11ddaaddfacea3f6094c2842ac5c0faea694bf487a3aa0d94ffa18de4588435d",
+    "sourcePngUnmodified": true
+  },
+  "board": {
+    "rows": 2,
+    "columns": 4,
+    "columnOrder": [
+      "front",
+      "left",
+      "right",
+      "back"
+    ],
+    "background": "opaque cream",
+    "nativeSpriteSheet": false
+  },
+  "proposals": [
+    {
+      "id": "hair-sidepart-01",
+      "label": "A · Corto con raya",
+      "row": 0,
+      "reviewStatus": "concept_visual_approved",
+      "description": "Corto con raya lateral, contorno compacto y orejas visibles."
+    },
+    {
+      "id": "hair-wavy-bob-01",
+      "label": "B · Media melena",
+      "row": 1,
+      "reviewStatus": "concept_visual_approved",
+      "description": "Media melena ondulada, rostro abierto y terminación próxima a la nuca."
+    }
+  ],
+  "production": {
+    "layerFilesExported": true,
+    "neutralHeadPrepared": true,
+    "nativeFramesExported": 0,
+    "hairSelectionImplemented": false,
+    "phaserIntegrated": false,
+    "nativeLayerFramesExported": 8,
+    "nativeStyleBExported": false,
+    "firstProductionManifest": "art/exports/avatars/avatar-head-layers-a-v01.json",
+    "firstProductionReview": "docs/design/avatar-head-layers-a-v01.md",
+    "preparedForLocalReview": "2026-10-20"
+  },
+  "inspection": {
+    "method": "Visual inspection of generated concept board",
+    "figuresObserved": 8,
+    "directionsPresent": true,
+    "labelsReadable": true,
+    "distinctHairSilhouettes": true,
+    "eyePixelEqualityTested": false,
+    "notes": [
+      "The board preserves the intended outfit and approximate identity but generation does not guarantee pixel equality with the approved base.",
+      "Exact eye geometry must be retained from the approved native head when producing playable layers.",
+      "Wavy bob ends near the collar; overlap with hood and backpack must be checked in native-size production."
+    ]
+  },
+  "provenance": {
+    "method": "image_gen built-in, identity-preserve",
+    "modelReported": null,
+    "transparentBackgroundRequested": false,
+    "references": [
+      "art/concepts/avatars/avatar-base-01-v04.png",
+      "art/concepts/avatars/avatar-base-01-v01.png"
+    ],
+    "prompt": "Use case: identity-preserve.\nAsset type: ONE concept-review board for the educational pixel-art game programation-world, showing two proposed HAIRSTYLES on the same existing avatar in four views each. This is a visual design proposal, not a finished animation sprite sheet.\nInput images: Image 1 is the edit target and approved avatar identity, with the requested front eyes. Image 2 is the reference for the approved left, right and back appearances and body. Keep the same anonymous avatar, green jacket, gray shirt, navy pants, brown boots, gray backpack, skin tone, head/body scale and idle pose. CHANGE ONLY THE HAIRSTYLE.\nLayout: square 1024 x 1024 concept board, light warm cream background. Two horizontal rows, four evenly spaced complete full-body figures in each row, eight figures total. Each figure must be fully visible from the top of hair to boot soles with comfortable margins. Each row uses the exact same avatar body and palette. Columns consistently: FRONT, SCREEN-LEFT PROFILE, SCREEN-RIGHT PROFILE, BACK. Column headings in Spanish exactly \"Frente\", \"Izquierda\", \"Derecha\", \"Espalda\". Label the first row only \"A · Corto con raya\"; label the second row only \"B · Media melena\". Clean readable dark headings outside the figures; no other text.\nRow A: a new neat SHORT SIDE-PART hairstyle, brown in the exact family of the base hair. Smooth chunky side-swept fringe above the eyes, a clear side part, compact shape, ears visible. It must visibly differ from the approved tousled spiky hair without changing head proportions. Corresponding back is short and tidily tapered at the nape. No shaved scalp or undercut.\nRow B: a new MEDIUM-LENGTH WAVY BOB hairstyle, same brown hue as row A and the reference. Soft large pixel-art waves, length around the nape just above the jacket shoulders, open face and eyes, visible neck, no ponytail, no ribbons. Must read clearly as a different silhouette from row A from all four views. Back hair ends above the gray backpack so the bag remains visible. Do not give it a different body or clothes.\nStyle: preserve the reference's detailed chunky pixel-art rendering, dark controlled contours and subtle block shading, 2D top-down RPG camera with visible front faces. No glossy anime illustration, vector drawing, 3D, blur, gradients or sketchy brush strokes.\nCritical face invariant in BOTH FRONT figures: two rectangular inward-looking dark pupils. Viewer-left eye has a narrow WHITE strip on its OUTER LEFT and a wider solid BLACK block on its INNER RIGHT toward nose. Viewer-right eye has a wider solid BLACK block on its INNER LEFT toward nose and narrow WHITE strip on its OUTER RIGHT. Pupils take about two thirds of each eye's width, white takes the exterior third; solid dark upper cap. White and black have the same eye height, black is continuous. Do not turn eyes into all-black dots or mostly white sockets. Keep existing face, ears and expression; no makeup or changed facial identity.\nAvoid: any new hat, jewelry, hair accessory, logos, brands, weapons, combat, scenery, UI controls, decorative border, watermark, different color jackets, changes to shoes, body, backpack or gendered labels. This board proposes hair shapes only."
+  },
+  "approval": {
+    "date": "2026-10-19",
+    "statement": "si, esos estilos estan buenos, conservamos a y b y tambien el original, y seguimos",
+    "scope": "Visual approval of original, A and B hair styles; native layers still require production checks",
+    "browserFunctionalTestsApproved": false
+  }
+}

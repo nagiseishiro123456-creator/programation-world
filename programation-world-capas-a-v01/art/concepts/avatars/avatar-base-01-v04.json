@@ -1,0 +1,301 @@
+{
+  "schemaVersion": 1,
+  "assetId": "avatar-base-01",
+  "project": "programation-world",
+  "version": "0.4",
+  "reviewStatus": "visual_base_approved_by_product_owner",
+  "source": {
+    "path": "art/concepts/avatars/avatar-base-01-v01.png",
+    "size": [
+      2048,
+      768
+    ],
+    "mode": "RGBA",
+    "bytes": 1259401,
+    "sha256": "32efa0437a7f3599d8de9832f06a29e3da81adc4c0a149d9dcb1f30ae35ad8fe",
+    "alpha_min": 0,
+    "alpha_max": 254,
+    "fully_transparent_fraction": 0.7259915669759115
+  },
+  "frame": {
+    "width": 32,
+    "height": 48,
+    "anchor": {
+      "x": 16,
+      "y": 46
+    },
+    "sourceFrameWidth": 416,
+    "sourceFrameHeight": 624,
+    "downsampleFactor": 13
+  },
+  "views": [
+    {
+      "id": "front",
+      "sourceRect": {
+        "x": 66,
+        "y": 94,
+        "width": 416,
+        "height": 624
+      },
+      "visibleBounds": {
+        "x": 142,
+        "y": 131,
+        "width": 263,
+        "height": 562
+      },
+      "estimatedFootCenter": [
+        274.5,
+        692
+      ],
+      "sourceOverride": {
+        "path": "art/concepts/avatars/avatar-base-01-v04.png",
+        "size": [
+          2048,
+          768
+        ],
+        "mode": "RGBA",
+        "bytes": 1253001,
+        "sha256": "7bba6f6bb4aa43e9059b60d70b09472262de5b5e58d3d236169a7b98c828d4b1",
+        "alpha_min": 0,
+        "alpha_max": 254,
+        "fully_transparent_fraction": 0.7250970204671224,
+        "purpose": "Front only: continuous dark blocks toward the face center and white strips at exterior edges",
+        "provenance": {
+          "method": "image_gen built-in, precise-object-edit",
+          "modelReported": null,
+          "transparentBackgroundRequested": true,
+          "generatedOutputUnmodified": true,
+          "editTarget": "art/concepts/avatars/avatar-base-01-v01.png",
+          "eyeLayoutReference": "art/references/reviews/front-eye-layout-reference.png",
+          "referenceSha256": "12eb97fc9b1a80c80115cc9ebfd77f0f89e18a956c145f4e875cb1fe433e40d3",
+          "prompt": "Use case: precise-object-edit.\nAsset type: v04 of a four-direction pixel-art game avatar, correcting the FRONT EYE DISTRIBUTION to exactly match the close-up reference.\nInput 1 is the EDIT TARGET: the original four-view 2048 x 768 transparent avatar sheet. Input 2 is the AUTHORITATIVE REFERENCE for the eyes only: the supplied face close-up. Match the close-up eye geometry faithfully; do not reinterpret its gaze.\nChange ONLY the two front-facing eyes of the LEFTMOST figure. The black pupil area of EACH eye must be a SOLID, STRAIGHT, FULL-HEIGHT VERTICAL RECTANGLE on the side nearest the CENTER OF THE FACE (the nose), filling that inner portion completely. The ONLY WHITE is a NARROW VERTICAL STRIP at the OUTER EDGE of each eye (toward the ears). Viewer-left eye: WHITE on its LEFT, then a WIDER BLACK BLOCK on its RIGHT. Viewer-right eye: a WIDER BLACK BLOCK on its LEFT, then WHITE on its RIGHT. The black portions face toward one another across the bridge of the nose. Match the reference's horizontal straight black upper cap above the white, and its dark-dominant balance: about one-third white at the outside and two-thirds solid dark at the inside. Both straight black blocks run down to the same bottom line as the white strips. Keep both eyes equal and mirrored in width and height. No L-shaped, stepped, notched or diagonal pupils; no white under or on the inner side of the pupil; no white highlights in the black blocks; no round iris or glossy sparkle. Calm forward-facing expression.\nAt the tiny 32 x 48 target size, the two middle rows of each eye should read viewer-left WHITE-BLACK-BLACK and viewer-right BLACK-BLACK-WHITE. Source location guide: front eye height around y285..319; viewer-left white x225..237 and dark x238..262; viewer-right dark x287..313 and white x314..327. These are small local eye changes, not larger eyes or a larger face.\nKeep all hair, face shape, skin, clothing, backpack, pants, boots, palette, shading, figure positions, scale, idle poses and common feet baseline unchanged. Keep the other three views unchanged. Preserve exact 2048 x 768 canvas and real alpha transparency. No text, labels, UI, frames, background or new objects."
+        }
+      },
+      "nativeEyeSampling": {
+        "purpose": "Preserve the user reference eye geometry when drawing the high-resolution art into 32x48. Sample the existing PNG colors; do not edit the source PNG. Applies only to the active front view, not historical comparisons.",
+        "patches": [
+          {
+            "id": "viewer_left_top_cap",
+            "sourceRect": {
+              "x": 242,
+              "y": 280,
+              "width": 10,
+              "height": 5
+            },
+            "destinationRect": {
+              "x": 12,
+              "y": 14,
+              "width": 3,
+              "height": 1
+            }
+          },
+          {
+            "id": "viewer_right_top_cap",
+            "sourceRect": {
+              "x": 304,
+              "y": 280,
+              "width": 8,
+              "height": 5
+            },
+            "destinationRect": {
+              "x": 17,
+              "y": 14,
+              "width": 3,
+              "height": 1
+            }
+          },
+          {
+            "id": "viewer_left_outer_white",
+            "sourceRect": {
+              "x": 230,
+              "y": 289,
+              "width": 6,
+              "height": 26
+            },
+            "destinationRect": {
+              "x": 12,
+              "y": 15,
+              "width": 1,
+              "height": 2
+            }
+          },
+          {
+            "id": "viewer_left_inner_pupil",
+            "sourceRect": {
+              "x": 242,
+              "y": 288,
+              "width": 12,
+              "height": 28
+            },
+            "destinationRect": {
+              "x": 13,
+              "y": 15,
+              "width": 2,
+              "height": 2
+            }
+          },
+          {
+            "id": "viewer_right_inner_pupil",
+            "sourceRect": {
+              "x": 301,
+              "y": 288,
+              "width": 11,
+              "height": 28
+            },
+            "destinationRect": {
+              "x": 17,
+              "y": 15,
+              "width": 2,
+              "height": 2
+            }
+          },
+          {
+            "id": "viewer_right_outer_white",
+            "sourceRect": {
+              "x": 318,
+              "y": 289,
+              "width": 5,
+              "height": 26
+            },
+            "destinationRect": {
+              "x": 19,
+              "y": 15,
+              "width": 1,
+              "height": 2
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "left",
+      "sourceRect": {
+        "x": 544,
+        "y": 94,
+        "width": 416,
+        "height": 624
+      },
+      "visibleBounds": {
+        "x": 629,
+        "y": 133,
+        "width": 264,
+        "height": 559
+      },
+      "estimatedFootCenter": [
+        752,
+        692
+      ]
+    },
+    {
+      "id": "right",
+      "sourceRect": {
+        "x": 1088,
+        "y": 94,
+        "width": 416,
+        "height": 624
+      },
+      "visibleBounds": {
+        "x": 1156,
+        "y": 133,
+        "width": 264,
+        "height": 559
+      },
+      "estimatedFootCenter": [
+        1296,
+        692
+      ]
+    },
+    {
+      "id": "back",
+      "sourceRect": {
+        "x": 1561,
+        "y": 94,
+        "width": 416,
+        "height": 624
+      },
+      "visibleBounds": {
+        "x": 1640,
+        "y": 133,
+        "width": 263,
+        "height": 559
+      },
+      "estimatedFootCenter": [
+        1769,
+        692
+      ]
+    }
+  ],
+  "animation": {
+    "state": "idle",
+    "walkingFramesProduced": false
+  },
+  "production": {
+    "native32x48PngExported": true,
+    "layersSeparated": false,
+    "engineIntegrationTested": false,
+    "nativeExportReference": "art/exports/avatars/avatar-base-01-walk-v01.json"
+  },
+  "provenance": {
+    "method": "image_gen built-in, identity-preserve",
+    "modelReported": null,
+    "transparentBackgroundRequested": true,
+    "sourceReference": "art/concepts/Z01/campus-avatar-v01.png",
+    "prompt": "Use case: identity-preserve.\nAsset type: four-direction idle character turnaround on a genuinely transparent PNG background for the educational pixel-art game programation-world.\n\nEDIT TARGET: use the attached approved campus concept solely to extract and preserve the identity of the LEFTMOST avatar labeled BASE: short tousled brown hair, the same warm skin tone and youthful face, muted green padded jacket over gray shirt, navy trousers, brown ankle boots and a compact gray backpack. Ignore the blue and terracotta variants and ignore all scenery.\n\nCreate exactly FOUR full-body appearances of that SAME anonymous base avatar in a single horizontal row, in this LEFT-TO-RIGHT ORDER: (1) FRONT facing the viewer; (2) LEFT PROFILE facing screen-left; (3) RIGHT PROFILE facing screen-right; (4) BACK with face completely hidden and the same gray backpack clearly visible. Idle neutral pose only, arms relaxed. Identical head size, height, jacket length, clothes, shoes, skin and palette in all four views. Perspective must match a classic top-down 2D RPG with visible face and a little top of the head, rather than a realistic human turnaround. Side views must show the body actually facing the stated side, not merely the head turned. Keep details and character silhouette coherent with the approved BASE avatar.\n\nLayout: wide transparent sheet, ideally 2048 by 768 pixels, divided conceptually into four equal cells, one centered character per cell, generous transparent gaps between figures, all boots aligned on the same baseline. No figure may touch the outside edge or neighboring cell. Think of each character as designed for a 32 by 48 logical-pixel frame, enlarged consistently for inspection. Make the pixel art clear and readable at this small target size: crisp dark outlines, simple controlled shading, readable green jacket, visible backpack straps, no unnecessary tiny decoration.\n\nOutput ONLY the four character views with actual alpha transparency around and between them. No labels, numerals, text, frame borders, arrows, backgrounds, floor, shadows, buildings, logos, watermarks, stat panels or extra characters. Do not include the BASE/A/B labels from the source. Do not change the character or assign a personal name. This sheet is an art-source study; exact source geometry will be inspected afterward.",
+    "sourcePngUnmodified": true
+  },
+  "alphaAnalysisNote": "Bounds estimated using alpha > 32; low-opacity residual pixels outside those bounds are preserved in the original source.",
+  "revision": {
+    "request": "Follow the supplied eye close-up: both dark pupils on the inner sides nearest the face center, full continuous vertical blocks; white only on the exterior sides",
+    "previousManifest": "art/concepts/avatars/avatar-base-01-v03.json",
+    "otherViewsUseOriginalSource": true,
+    "reference": "art/references/reviews/front-eye-layout-reference.png",
+    "nativeEyeSamplingImplemented": true,
+    "note": "Generated front source is not byte-identical outside the eyes. Native-size eye regions are sampled separately by the preview renderer to retain the reference layout. Browser and artistic approval remain pending."
+  },
+  "comparisons": [
+    {
+      "id": "original",
+      "version": "0.1",
+      "label": "Original · v01",
+      "source": {
+        "path": "art/concepts/avatars/avatar-base-01-v01.png",
+        "size": [
+          2048,
+          768
+        ]
+      },
+      "sourceRect": {
+        "x": 66,
+        "y": 94,
+        "width": 416,
+        "height": 624
+      }
+    },
+    {
+      "id": "previous",
+      "version": "0.3",
+      "label": "Anterior · v03",
+      "source": {
+        "path": "art/concepts/avatars/avatar-base-01-v03.png",
+        "size": [
+          2048,
+          768
+        ]
+      },
+      "sourceRect": {
+        "x": 67,
+        "y": 94,
+        "width": 416,
+        "height": 624
+      },
+      "nativeEyeSampling": null
+    }
+  ],
+  "approval": {
+    "date": "2026-10-19",
+    "statement": "este pasa, ahora seguimos",
+    "scope": "Visual appearance of v04 and authorization to continue with walking animation",
+    "browserFunctionalTestsApproved": false
+  },
+  "walkAnimationManifest": "art/concepts/avatars/avatar-base-01-walk-v01.json"
+}

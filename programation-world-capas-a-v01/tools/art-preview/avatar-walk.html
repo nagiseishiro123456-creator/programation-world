@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>programation-world · Prueba de marcha</title>
+  <style>
+    :root{color-scheme:light;--ink:#1f2933;--muted:#52616b;--paper:#fffaf1;--cream:#f4e8d3;--edge:#c8bba5;--green:#2d6a4f}*{box-sizing:border-box}body{margin:0;background:var(--cream);color:var(--ink);font:16px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}main{max-width:1200px;margin:auto;padding:30px 24px 48px}header{display:flex;align-items:center;justify-content:space-between;gap:24px;margin-bottom:24px}h1{font-size:clamp(26px,3vw,38px);line-height:1.15;margin:6px 0 12px}h2{font-size:20px;margin:0 0 14px}h3{font-size:16px;margin:0 0 10px}p{margin:8px 0}.eyebrow{font-size:13px;font-weight:750;letter-spacing:.09em;text-transform:uppercase;color:var(--green)}.pill{border:1px solid #a8bba3;border-radius:20px;background:#e4edde;color:#244c39;padding:7px 12px;font-size:13px;font-weight:700;white-space:nowrap}.muted{color:var(--muted)}.intro{max-width:780px}.panel,.card{background:var(--paper);border:1px solid var(--edge);border-radius:14px;padding:22px;min-width:0}.columns{display:grid;grid-template-columns:minmax(280px,1fr) minmax(320px,1.5fr);gap:20px}.controls{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:14px 0}button,select{font:inherit;border-radius:8px;border:1px solid #8a9589;padding:8px 12px;color:var(--ink);background:#fffdf8}button{cursor:pointer}button:disabled,select:disabled{opacity:.55;cursor:wait}button[aria-pressed="true"]{background:var(--green);color:white;border-color:var(--green)}button:focus-visible,select:focus-visible,canvas:focus-visible,a:focus-visible{outline:3px solid #9c650b;outline-offset:3px}label{font-size:14px}canvas{image-rendering:pixelated;image-rendering:crisp-edges;vertical-align:middle}.checker{background-color:#fffdf8;background-image:linear-gradient(45deg,#e1ddcf 25%,transparent 25%),linear-gradient(-45deg,#e1ddcf 25%,transparent 25%),linear-gradient(45deg,transparent 75%,#e1ddcf 75%),linear-gradient(-45deg,transparent 75%,#e1ddcf 75%);background-size:16px 16px;background-position:0 0,0 8px,8px -8px,-8px 0}.inspection{border:1px solid var(--edge);border-radius:10px;min-height:230px;display:grid;place-items:center;padding:16px;overflow:auto}#selected{width:128px;height:192px;outline:1px dashed #87948a}#stage{display:block;width:100%;height:auto;aspect-ratio:5/3;border:1px solid var(--edge);border-radius:10px;touch-action:none}.small{font-size:13px}.status{color:var(--green);font-size:14px;min-height:24px}.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:20px}.card{text-align:center;padding:18px 12px}.samples{display:flex;justify-content:center;gap:18px;align-items:flex-end}.native{width:32px;height:48px;outline:1px dashed #87948a}.enlarged{width:96px;height:144px}.strip{display:flex;flex-wrap:wrap;gap:16px;align-items:flex-end;justify-content:space-evenly;margin-top:16px}.strip figure{margin:0;text-align:center}.strip canvas{width:64px;height:96px}.strip figcaption{font-size:13px;margin-top:8px}.source{margin-top:20px}.source img{display:block;max-width:100%;height:auto;max-height:700px;object-fit:contain;margin:auto}.error{color:#6c2424;background:#fff3ef;border-left:4px solid #9c3d3d;padding:14px;margin-bottom:18px}a{color:#24523c;text-underline-offset:3px}footer{font-size:14px;color:var(--muted);margin-top:22px}.summary{display:flex;flex-wrap:wrap;gap:8px 20px;font-size:14px}.key{border:1px solid var(--edge);border-radius:4px;padding:1px 5px;font-family:ui-monospace,monospace}
+    @media(max-width:850px){header{align-items:flex-start;flex-direction:column;gap:10px}.columns{grid-template-columns:1fr}.gallery{grid-template-columns:repeat(2,1fr)}}@media(max-width:440px){main{padding:20px 14px}.gallery{grid-template-columns:1fr}.panel{padding:16px}}
+  </style>
+  <script defer src="avatar-walk-core.js"></script>
+  <script defer src="avatar-walk-data.js"></script>
+  <script defer src="avatar-walk-studio.js"></script>
+</head>
+<body><main>
+  <header><div><div class="eyebrow">programation-world · S0-03</div><h1>Prueba de marcha del avatar</h1><p class="intro muted">Revisa el ciclo de cuatro cuadros, el apoyo de los pies y la transición al reposo. El rostro y el peinado conservan la base aprobada.</p></div><span class="pill">Reposo y marcha aprobados</span></header>
+  <div id="error" class="error" hidden role="alert"></div>
+  <section class="columns" aria-label="Revisión de animación">
+    <div class="panel"><h2>Dirección y reproducción</h2>
+      <div id="directions" class="controls" aria-label="Dirección"></div>
+      <div class="controls"><button data-mode="walk" aria-pressed="true" disabled>Marcha en bucle</button><button data-mode="idle" aria-pressed="false" disabled>Reposo</button></div>
+      <div class="controls"><button id="play" aria-pressed="false" disabled>Pausar</button><button id="previous" aria-label="Cuadro anterior" disabled>Anterior</button><button id="next" aria-label="Cuadro siguiente" disabled>Siguiente</button></div>
+      <div class="controls"><label for="fps">Cuadros por segundo</label><select id="fps" disabled><option>4</option><option>6</option><option selected>8</option><option>10</option><option>12</option></select><label for="zoom">Ampliación</label><select id="zoom" disabled><option value="1">1×</option><option value="4" selected>4×</option><option value="8">8×</option></select></div>
+      <div class="inspection checker"><canvas id="selected" width="32" height="48" aria-label="Cuadro actual del avatar"></canvas></div>
+      <p id="frame-label" class="small muted">Cargando cuadros…</p>
+    </div>
+    <div class="panel"><h2>Pista de prueba</h2>
+      <canvas id="stage" width="320" height="192" tabindex="0" aria-label="Pista de prueba. Activa el movimiento y usa WASD o las flechas."></canvas>
+      <div class="controls"><label><input id="movement" type="checkbox" disabled> Probar desplazamiento con teclado</label><button id="reset" disabled>Centrar</button></div>
+      <p class="small muted">Activa la prueba y haz clic en la pista. Usa <span class="key">WASD</span> o las flechas; al soltar vuelve al reposo. El desplazamiento se limita a esta cuadrícula.</p>
+      <div class="summary"><span>Cuadro: <strong>32 × 48</strong></span><span>Anclaje: <strong>(16, 46)</strong></span><span>Marcha: <strong>4 cuadros por dirección</strong></span></div>
+      <p class="status" id="status" role="status">Cargando las fuentes locales…</p>
+    </div>
+  </section>
+  <section id="gallery" class="gallery" aria-label="Marcha en las cuatro direcciones"></section>
+  <section class="panel source"><h2>Cuadros de la dirección seleccionada</h2><div id="strip" class="strip"></div><p class="small muted">El primer cuadro es el reposo aprobado; los cuatro siguientes siguen el orden del ciclo de prueba. La marcha fue aprobada visualmente el 19 de octubre de 2026; las comprobaciones funcionales de navegador siguen pendientes.</p></section>
+  <details class="panel source"><summary>Lámina de marcha y registro</summary><div class="checker"><img id="source" alt="Fuente de 16 poses de marcha del avatar sobre transparencia"></div><p class="small muted">La lámina es una fuente de arte. El visor reutiliza la franja superior del reposo aprobado al componer cada cuadro pequeño.</p><p><a href="../../art/concepts/avatars/avatar-base-01-walk-v01.json">Datos y prompt de la marcha</a> · <a href="../../docs/design/avatar-walk-review-v01.md">Registro de revisión</a> · <a href="avatar-base-01.html">Revisar reposo v04</a></p></details>
+  <footer><a href="avatar-customization.html">Abrir la primera prueba de personalización</a>. El mapa de Z01, el aprendizaje y las funciones multijugador se implementarán en sus pasos correspondientes.</footer>
+</main></body></html>

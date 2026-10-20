@@ -1,0 +1,746 @@
+{
+  "schemaVersion": 1,
+  "assetId": "avatar-base-01",
+  "animationId": "avatar-base-01-walk",
+  "version": "0.1",
+  "reviewStatus": "walking_visual_approved_by_product_owner",
+  "approvedIdleVersion": "0.4",
+  "idleManifest": "art/concepts/avatars/avatar-base-01-v04.json",
+  "frame": {
+    "width": 32,
+    "height": 48,
+    "anchor": {
+      "x": 16,
+      "y": 46
+    }
+  },
+  "source": {
+    "path": "art/concepts/avatars/avatar-base-01-walk-v01.png",
+    "size": [
+      1024,
+      1536
+    ],
+    "mode": "RGBA",
+    "bytes": 1846333,
+    "sha256": "cc53f9ad06b00d0b9430e9ab456b4ae3d929a8bdb1f5f68c7e3952f7961c27c1",
+    "alpha_min": 0,
+    "alpha_max": 254,
+    "fully_transparent_fraction": 0.5243453979492188
+  },
+  "grid": {
+    "columns": 4,
+    "rows": 4,
+    "cellWidth": 256,
+    "cellHeight": 384,
+    "sourcePixelsPerLogicalPixel": 8
+  },
+  "playback": {
+    "defaultFps": 8,
+    "minFps": 4,
+    "maxFps": 12,
+    "settingScope": "Inspection only; final movement speed is not decided"
+  },
+  "composition": {
+    "approvedUpperBandHeight": 22,
+    "method": "Draw walking source body into 32x48, then reuse rows 0..21 of approved idle for the same direction; source PNGs remain unchanged",
+    "note": "Upper-band composition preserves the approved hair, face and inward pupils; the flattened PNG source is not a customization layer catalog"
+  },
+  "views": [
+    {
+      "id": "front",
+      "row": 0,
+      "sequence": [
+        0,
+        2,
+        1,
+        3
+      ],
+      "poses": [
+        {
+          "id": "front-walk-1",
+          "column": 0,
+          "sourceRect": {
+            "x": 8,
+            "y": 2,
+            "width": 256,
+            "height": 384
+          },
+          "cell": {
+            "x": 0,
+            "y": 0,
+            "width": 256,
+            "height": 384
+          },
+          "visibleBoundsInCell": {
+            "x": 53,
+            "y": 32,
+            "width": 166,
+            "height": 338
+          }
+        },
+        {
+          "id": "front-walk-2",
+          "column": 1,
+          "sourceRect": {
+            "x": 258,
+            "y": -5,
+            "width": 256,
+            "height": 384
+          },
+          "cell": {
+            "x": 256,
+            "y": 0,
+            "width": 256,
+            "height": 384
+          },
+          "visibleBoundsInCell": {
+            "x": 47,
+            "y": 32,
+            "width": 165,
+            "height": 331
+          }
+        },
+        {
+          "id": "front-walk-3",
+          "column": 2,
+          "sourceRect": {
+            "x": 508.5,
+            "y": 0,
+            "width": 256,
+            "height": 384
+          },
+          "cell": {
+            "x": 512,
+            "y": 0,
+            "width": 256,
+            "height": 384
+          },
+          "visibleBoundsInCell": {
+            "x": 42,
+            "y": 32,
+            "width": 165,
+            "height": 336
+          }
+        },
+        {
+          "id": "front-walk-4",
+          "column": 3,
+          "sourceRect": {
+            "x": 759,
+            "y": -2,
+            "width": 256,
+            "height": 384
+          },
+          "cell": {
+            "x": 768,
+            "y": 0,
+            "width": 256,
+            "height": 384
+          },
+          "visibleBoundsInCell": {
+            "x": 37,
+            "y": 32,
+            "width": 163,
+            "height": 334
+          }
+        }
+      ]
+    },
+    {
+      "id": "left",
+      "row": 1,
+      "sequence": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "poses": [
+        {
+          "id": "left-walk-1",
+          "column": 0,
+          "sourceRect": {
+            "x": 5.5,
+            "y": 372,
+            "width": 256,
+            "height": 384
+          },
+          "cell": {
+            "x": 0,
+            "y": 384,
+            "width": 256,
+            "height": 384
+          },
+          "visibleBoundsInCell": {
+            "x": 48,
+            "y": 9,
+            "width": 177,
+            "height": 347
+          }
+        },
+        {
+          "id": "left-walk-2",
+          "column": 1,
+          "sourceRect": {
+            "x": 246.5,
+            "y": 370,
+            "width": 256,
+            "height": 384
+          },
+          "cell": {
+            "x": 256,
+            "y": 384,
+            "width": 256,
+            "height": 384
+          },
+          "visibleBoundsInCell": {
+            "x": 37,
+            "y": 9,
+            "width": 179,
+            "height": 345
+          }
+        },
+        {
+          "id": "left-walk-3",
+          "column": 2,
+          "sourceRect": {
+            "x": 502,
+            "y": 376,
+            "width": 256,
+            "height": 384
+          },
+          "cell": {
+            "x": 512,
+            "y": 384,
+            "width": 256,
+            "height": 384
+          },
+          "visibleBoundsInCell": {
+            "x": 33,
+            "y": 9,
+            "width": 181,
+            "height": 351
+          }
+        },
+        {
+          "id": "left-walk-4",
+          "column": 3,
+          "sourceRect": {
+            "x": 749,
+            "y": 371,
+            "width": 256,
+            "height": 384
+          },
+          "cell": {
+            "x": 768,
+            "y": 384,
+            "width": 256,
+            "height": 384
+          },
+          "visibleBoundsInCell": {
+            "x": 28,
+            "y": 10,
+            "width": 180,
+            "height": 345
+          }
+        }
+      ]
+    },
+    {
+      "id": "right",
+      "row": 2,
+      "sequence": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "poses": [
+        {
+          "id": "right-walk-1",
+          "column": 0,
+          "sourceRect": {
+            "x": 7.5,
+            "y": 755,
+            "width": 256,
+            "height": 384
+          },
+          "cell": {
+            "x": 0,
+            "y": 768,
+            "width": 256,
+            "height": 384
+          },
+          "visibleBoundsInCell": {
+            "x": 45,
+            "y": 4,
+            "width": 178,
+            "height": 351
+          }
+        },
+        {
+          "id": "right-walk-2",
+          "column": 1,
+          "sourceRect": {
+            "x": 258.5,
+            "y": 756,
+            "width": 256,
+            "height": 384
+          },
+          "cell": {
+            "x": 256,
+            "y": 768,
+            "width": 256,
+            "height": 384
+          },
+          "visibleBoundsInCell": {
+            "x": 36,
+            "y": 3,
+            "width": 182,
+            "height": 353
+          }
+        },
+        {
+          "id": "right-walk-3",
+          "column": 2,
+          "sourceRect": {
+            "x": 513,
+            "y": 755,
+            "width": 256,
+            "height": 384
+          },
+          "cell": {
+            "x": 512,
+            "y": 768,
+            "width": 256,
+            "height": 384
+          },
+          "visibleBoundsInCell": {
+            "x": 33,
+            "y": 4,
+            "width": 181,
+            "height": 351
+          }
+        },
+        {
+          "id": "right-walk-4",
+          "column": 3,
+          "sourceRect": {
+            "x": 762.5,
+            "y": 753,
+            "width": 256,
+            "height": 384
+          },
+          "cell": {
+            "x": 768,
+            "y": 768,
+            "width": 256,
+            "height": 384
+          },
+          "visibleBoundsInCell": {
+            "x": 26,
+            "y": 5,
+            "width": 181,
+            "height": 348
+          }
+        }
+      ]
+    },
+    {
+      "id": "back",
+      "row": 3,
+      "sequence": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "poses": [
+        {
+          "id": "back-walk-1",
+          "column": 0,
+          "sourceRect": {
+            "x": 3.5,
+            "y": 1137,
+            "width": 256,
+            "height": 384
+          },
+          "cell": {
+            "x": 0,
+            "y": 1152,
+            "width": 256,
+            "height": 384
+          },
+          "visibleBoundsInCell": {
+            "x": 47,
+            "y": 0,
+            "width": 168,
+            "height": 353
+          }
+        },
+        {
+          "id": "back-walk-2",
+          "column": 1,
+          "sourceRect": {
+            "x": 253.5,
+            "y": 1134,
+            "width": 256,
+            "height": 384
+          },
+          "cell": {
+            "x": 256,
+            "y": 1152,
+            "width": 256,
+            "height": 384
+          },
+          "visibleBoundsInCell": {
+            "x": 43,
+            "y": 0,
+            "width": 166,
+            "height": 350
+          }
+        },
+        {
+          "id": "back-walk-3",
+          "column": 2,
+          "sourceRect": {
+            "x": 507,
+            "y": 1137,
+            "width": 256,
+            "height": 384
+          },
+          "cell": {
+            "x": 512,
+            "y": 1152,
+            "width": 256,
+            "height": 384
+          },
+          "visibleBoundsInCell": {
+            "x": 40,
+            "y": 0,
+            "width": 172,
+            "height": 353
+          }
+        },
+        {
+          "id": "back-walk-4",
+          "column": 3,
+          "sourceRect": {
+            "x": 763,
+            "y": 1132,
+            "width": 256,
+            "height": 384
+          },
+          "cell": {
+            "x": 768,
+            "y": 1152,
+            "width": 256,
+            "height": 384
+          },
+          "visibleBoundsInCell": {
+            "x": 37,
+            "y": 0,
+            "width": 169,
+            "height": 348
+          }
+        }
+      ]
+    }
+  ],
+  "production": {
+    "walkingSourceFrames": 16,
+    "idleFrames": 4,
+    "nativeSpritePngExported": true,
+    "phaserIntegrated": false,
+    "multiplayerImplemented": false
+  },
+  "provenance": {
+    "method": "image_gen built-in, identity-preserve",
+    "modelReported": null,
+    "transparentBackgroundRequested": true,
+    "sourcePngUnmodified": true,
+    "references": [
+      "art/concepts/avatars/avatar-base-01-v04.png",
+      "art/concepts/avatars/avatar-base-01-v01.png"
+    ],
+    "prompt": "Use case: identity-preserve.\nAsset type: clean 16-frame walking animation SOURCE SHEET for the educational pixel-art game programation-world.\nInputs: image 1 is the approved avatar identity, especially the front-facing design; image 2 supplies the approved left profile, right profile and back appearances. Keep this exact anonymous character: short tousled brown hair, warm skin, green padded jacket, gray shirt, navy pants, brown boots, compact gray backpack. Maintain its chunky outlines, controlled pixel shading and top-down RPG proportions. Front eyes have continuous dark vertical blocks toward the nose and narrow white strips on the outer edges. Do not redesign the character.\nOutput a tall transparent PNG exactly 1024 x 1536, arranged in a STRICT 4 COLUMN by 4 ROW GRID of 256 x 384 cells. Exactly ONE complete character in each cell, 16 figures total, no extra poses outside the grid. Centers at x128,384,640,896; row centers y192,576,960,1344. Consistent scale across all 16 figures: each character about 160 pixels wide and 336 pixels tall with generous transparent margins; soles of the grounded boot approximately 360 pixels below the top of each cell. All figures fully visible, centered on the same vertical body axis in their cells.\nROW 1 (top): exactly FOUR WALK CYCLE FRAMES FACING FRONT / toward viewer / down-screen.\nROW 2: exactly FOUR WALK CYCLE FRAMES FACING SCREEN-LEFT, full left profile including body and boots.\nROW 3: exactly FOUR WALK CYCLE FRAMES FACING SCREEN-RIGHT, full right profile including body and boots.\nROW 4 (bottom): exactly FOUR WALK CYCLE FRAMES FACING BACK / away from viewer / up-screen, face fully hidden and gray backpack visible.\nIn EACH row, columns are time ordered: 1) left leg forward, right leg back, opposite arm swing; 2) passing pose with the right leg lifting past the planted left boot; 3) right leg forward, left leg back, opposite arm swing; 4) passing pose with the left leg lifting past the planted right boot. These must be visibly DIFFERENT genuine leg and arm poses that make a repeating WALK cycle, not four copies of the idle pose, not a jump or run. Keep the upper torso, head size and camera angle stable; small natural body movement only. Front and back legs must visibly alternate with opposite boot heights/foreshortening. Side views need distinct forward and backward boot positions. Jacket and backpack remain consistent.\nPixel art suitable for 32 x 48 logical frames after scaling. Crisp clearly separated boot silhouettes, no motion blur, no antialias smears. Preserve identity and palette in all cells. Genuinely transparent background including all inter-cell gaps, no checkerboard painted into the image, no drop shadow or floor. No grid lines, no numbers, no labels, no captions, no text, no buildings, logos, UI, sparkles, weapons or other objects. The grid is a precise layout instruction, not visible content."
+  },
+  "nativeExport": {
+    "path": "art/exports/avatars/avatar-base-01-walk-v01.png",
+    "metadataPath": "art/exports/avatars/avatar-base-01-walk-v01.json",
+    "size": [
+      160,
+      192
+    ],
+    "sha256": "9765a29f50f42a180725d6737650c0360b13c6cb73c8fb39b38ebe4bdb23a211",
+    "format": "project-neutral atlas rectangles; engine adapter not yet tested",
+    "frames": [
+      {
+        "id": "front-idle",
+        "direction": "front",
+        "state": "idle",
+        "poseIndex": null,
+        "cycleIndex": null,
+        "frame": {
+          "x": 0,
+          "y": 0,
+          "width": 32,
+          "height": 48
+        }
+      },
+      {
+        "id": "front-walk-1",
+        "direction": "front",
+        "state": "walk",
+        "poseIndex": 0,
+        "cycleIndex": 0,
+        "frame": {
+          "x": 32,
+          "y": 0,
+          "width": 32,
+          "height": 48
+        }
+      },
+      {
+        "id": "front-walk-3",
+        "direction": "front",
+        "state": "walk",
+        "poseIndex": 2,
+        "cycleIndex": 1,
+        "frame": {
+          "x": 64,
+          "y": 0,
+          "width": 32,
+          "height": 48
+        }
+      },
+      {
+        "id": "front-walk-2",
+        "direction": "front",
+        "state": "walk",
+        "poseIndex": 1,
+        "cycleIndex": 2,
+        "frame": {
+          "x": 96,
+          "y": 0,
+          "width": 32,
+          "height": 48
+        }
+      },
+      {
+        "id": "front-walk-4",
+        "direction": "front",
+        "state": "walk",
+        "poseIndex": 3,
+        "cycleIndex": 3,
+        "frame": {
+          "x": 128,
+          "y": 0,
+          "width": 32,
+          "height": 48
+        }
+      },
+      {
+        "id": "left-idle",
+        "direction": "left",
+        "state": "idle",
+        "poseIndex": null,
+        "cycleIndex": null,
+        "frame": {
+          "x": 0,
+          "y": 48,
+          "width": 32,
+          "height": 48
+        }
+      },
+      {
+        "id": "left-walk-1",
+        "direction": "left",
+        "state": "walk",
+        "poseIndex": 0,
+        "cycleIndex": 0,
+        "frame": {
+          "x": 32,
+          "y": 48,
+          "width": 32,
+          "height": 48
+        }
+      },
+      {
+        "id": "left-walk-2",
+        "direction": "left",
+        "state": "walk",
+        "poseIndex": 1,
+        "cycleIndex": 1,
+        "frame": {
+          "x": 64,
+          "y": 48,
+          "width": 32,
+          "height": 48
+        }
+      },
+      {
+        "id": "left-walk-3",
+        "direction": "left",
+        "state": "walk",
+        "poseIndex": 2,
+        "cycleIndex": 2,
+        "frame": {
+          "x": 96,
+          "y": 48,
+          "width": 32,
+          "height": 48
+        }
+      },
+      {
+        "id": "left-walk-4",
+        "direction": "left",
+        "state": "walk",
+        "poseIndex": 3,
+        "cycleIndex": 3,
+        "frame": {
+          "x": 128,
+          "y": 48,
+          "width": 32,
+          "height": 48
+        }
+      },
+      {
+        "id": "right-idle",
+        "direction": "right",
+        "state": "idle",
+        "poseIndex": null,
+        "cycleIndex": null,
+        "frame": {
+          "x": 0,
+          "y": 96,
+          "width": 32,
+          "height": 48
+        }
+      },
+      {
+        "id": "right-walk-1",
+        "direction": "right",
+        "state": "walk",
+        "poseIndex": 0,
+        "cycleIndex": 0,
+        "frame": {
+          "x": 32,
+          "y": 96,
+          "width": 32,
+          "height": 48
+        }
+      },
+      {
+        "id": "right-walk-2",
+        "direction": "right",
+        "state": "walk",
+        "poseIndex": 1,
+        "cycleIndex": 1,
+        "frame": {
+          "x": 64,
+          "y": 96,
+          "width": 32,
+          "height": 48
+        }
+      },
+      {
+        "id": "right-walk-3",
+        "direction": "right",
+        "state": "walk",
+        "poseIndex": 2,
+        "cycleIndex": 2,
+        "frame": {
+          "x": 96,
+          "y": 96,
+          "width": 32,
+          "height": 48
+        }
+      },
+      {
+        "id": "right-walk-4",
+        "direction": "right",
+        "state": "walk",
+        "poseIndex": 3,
+        "cycleIndex": 3,
+        "frame": {
+          "x": 128,
+          "y": 96,
+          "width": 32,
+          "height": 48
+        }
+      },
+      {
+        "id": "back-idle",
+        "direction": "back",
+        "state": "idle",
+        "poseIndex": null,
+        "cycleIndex": null,
+        "frame": {
+          "x": 0,
+          "y": 144,
+          "width": 32,
+          "height": 48
+        }
+      },
+      {
+        "id": "back-walk-1",
+        "direction": "back",
+        "state": "walk",
+        "poseIndex": 0,
+        "cycleIndex": 0,
+        "frame": {
+          "x": 32,
+          "y": 144,
+          "width": 32,
+          "height": 48
+        }
+      },
+      {
+        "id": "back-walk-2",
+        "direction": "back",
+        "state": "walk",
+        "poseIndex": 1,
+        "cycleIndex": 1,
+        "frame": {
+          "x": 64,
+          "y": 144,
+          "width": 32,
+          "height": 48
+        }
+      },
+      {
+        "id": "back-walk-3",
+        "direction": "back",
+        "state": "walk",
+        "poseIndex": 2,
+        "cycleIndex": 2,
+        "frame": {
+          "x": 96,
+          "y": 144,
+          "width": 32,
+          "height": 48
+        }
+      },
+      {
+        "id": "back-walk-4",
+        "direction": "back",
+        "state": "walk",
+        "poseIndex": 3,
+        "cycleIndex": 3,
+        "frame": {
+          "x": 128,
+          "y": 144,
+          "width": 32,
+          "height": 48
+        }
+      }
+    ]
+  },
+  "approval": {
+    "date": "2026-10-19",
+    "statement": "okey si me gusta seguimos seguimos",
+    "scope": "Visual acceptance of the first walking preview; not a browser functional test",
+    "browserFunctionalTestsApproved": false
+  }
+}

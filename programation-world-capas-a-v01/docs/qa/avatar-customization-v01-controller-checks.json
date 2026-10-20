@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "environment": "Node VM, minimal DOM adapter and reference Canvas; not a browser",
+  "checks": [
+    "Startup and original appearance",
+    "Palette and direction controls",
+    "Playback, manual step and cycle wrap",
+    "Serialized download payload",
+    "Valid import and invalid import preserves choice",
+    "Reset, error recovery and idle transition"
+  ],
+  "browserExecuted": false,
+  "layoutTested": false,
+  "nativeDownloadDialogTested": false
+}

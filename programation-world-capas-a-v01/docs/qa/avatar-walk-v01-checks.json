@@ -1,0 +1,311 @@
+{
+  "date": "2026-10-19",
+  "scope": "Walking preview v01, actual shared renderer and input helpers",
+  "renderer": "@napi-rs/canvas, Node; not a browser run",
+  "idleApproval": "Product Owner approved v04 on 2026-10-19",
+  "checks": {
+    "javascriptSyntax": true,
+    "dataSnapshotMatchesManifests": true,
+    "idleMatchesApprovedRenderer": true,
+    "fourDistinctWalkingBodiesPerDirection": true,
+    "approvedUpperBandIdentical": true,
+    "frontEyeOrientationAllWalkingFrames": true,
+    "commonFootBaseline45": true,
+    "frameTimingAndWrapAllFps": true,
+    "inputDirectionReleaseAndBounds": true,
+    "sourceHashesVerified": true,
+    "nativeAtlasRoundTripAll20Frames": true
+  },
+  "frames": [
+    {
+      "direction": "front",
+      "frames": [
+        {
+          "index": -1,
+          "id": "idle",
+          "bounds": {
+            "minX": 6,
+            "minY": 3,
+            "maxX": 25,
+            "maxY": 45
+          },
+          "sha256Pixels": "89cc101deb0d695e7bb14b8893e29cacd519410789d33acbb7aa12bcb5fd706f"
+        },
+        {
+          "index": 0,
+          "id": "front-walk-1",
+          "bounds": {
+            "minX": 6,
+            "minY": 3,
+            "maxX": 25,
+            "maxY": 45
+          },
+          "sha256Pixels": "e6fe076d19891bf989937fd6d38b61b9358350a2f4fa16e0692a79fed2aa5baf"
+        },
+        {
+          "index": 1,
+          "id": "front-walk-3",
+          "bounds": {
+            "minX": 6,
+            "minY": 3,
+            "maxX": 25,
+            "maxY": 45
+          },
+          "sha256Pixels": "2c66ccc3724f0fcd57b957c98a4be46a26a8fc40d7d4483c7cb5119b44cd6119"
+        },
+        {
+          "index": 2,
+          "id": "front-walk-2",
+          "bounds": {
+            "minX": 6,
+            "minY": 3,
+            "maxX": 25,
+            "maxY": 45
+          },
+          "sha256Pixels": "0f1674ba756c2d596fc2acd603f7e94da1eefc7a5c541c27ea267a09bb72170b"
+        },
+        {
+          "index": 3,
+          "id": "front-walk-4",
+          "bounds": {
+            "minX": 6,
+            "minY": 3,
+            "maxX": 25,
+            "maxY": 45
+          },
+          "sha256Pixels": "703bc929401577fc6d066b4fa4f5c70755a04d0496037197c151bb746e6e1fc0"
+        }
+      ]
+    },
+    {
+      "direction": "left",
+      "frames": [
+        {
+          "index": -1,
+          "id": "idle",
+          "bounds": {
+            "minX": 7,
+            "minY": 3,
+            "maxX": 26,
+            "maxY": 45
+          },
+          "sha256Pixels": "b5145a1a796523d7b5a0096dde0a8412f3a30e269df07520e4ae9418879dcf1d"
+        },
+        {
+          "index": 0,
+          "id": "left-walk-1",
+          "bounds": {
+            "minX": 5,
+            "minY": 3,
+            "maxX": 26,
+            "maxY": 45
+          },
+          "sha256Pixels": "3a244c954c679c99fa720928ff295b7fb0a647d460ae510d04b80fbb033e7d12"
+        },
+        {
+          "index": 1,
+          "id": "left-walk-2",
+          "bounds": {
+            "minX": 7,
+            "minY": 3,
+            "maxX": 27,
+            "maxY": 45
+          },
+          "sha256Pixels": "20d46eb0d5ef952691d706e2d9921fd2a62ff142065d2f99570ed06728923bac"
+        },
+        {
+          "index": 2,
+          "id": "left-walk-3",
+          "bounds": {
+            "minX": 6,
+            "minY": 3,
+            "maxX": 27,
+            "maxY": 45
+          },
+          "sha256Pixels": "fcd3a9062e81f45b87344ea16cc9374faccea8a0358de8aa1d1f5a95b658d622"
+        },
+        {
+          "index": 3,
+          "id": "left-walk-4",
+          "bounds": {
+            "minX": 7,
+            "minY": 3,
+            "maxX": 27,
+            "maxY": 45
+          },
+          "sha256Pixels": "705d2f6d8e17429d0f00fb1337f1732660638f6168fa5896d387301c3e1c5cfb"
+        }
+      ]
+    },
+    {
+      "direction": "right",
+      "frames": [
+        {
+          "index": -1,
+          "id": "idle",
+          "bounds": {
+            "minX": 5,
+            "minY": 3,
+            "maxX": 25,
+            "maxY": 45
+          },
+          "sha256Pixels": "6d4174c431a1b6a631b10d10ba3c86fc43f02393b324feee65794c7cd987bde3"
+        },
+        {
+          "index": 0,
+          "id": "right-walk-1",
+          "bounds": {
+            "minX": 5,
+            "minY": 3,
+            "maxX": 26,
+            "maxY": 45
+          },
+          "sha256Pixels": "4f94b14a0fcaa2c19e2c48cb18bba5cda65d85aa4ac0bce31fc5e9d7a76854b4"
+        },
+        {
+          "index": 1,
+          "id": "right-walk-2",
+          "bounds": {
+            "minX": 4,
+            "minY": 3,
+            "maxX": 25,
+            "maxY": 45
+          },
+          "sha256Pixels": "31794de54602efcc5d73fd6c0da68868a4930b981009e6d3cd234a7a8106928c"
+        },
+        {
+          "index": 2,
+          "id": "right-walk-3",
+          "bounds": {
+            "minX": 4,
+            "minY": 3,
+            "maxX": 25,
+            "maxY": 45
+          },
+          "sha256Pixels": "ceac0910fe80ec92bcfd3313351f757cfad5aef5f4806757cc91320206bab615"
+        },
+        {
+          "index": 3,
+          "id": "right-walk-4",
+          "bounds": {
+            "minX": 4,
+            "minY": 3,
+            "maxX": 25,
+            "maxY": 45
+          },
+          "sha256Pixels": "34a9219139cbe1121f3452beaa891256b6021766218081c76ef3b58afb9a6319"
+        }
+      ]
+    },
+    {
+      "direction": "back",
+      "frames": [
+        {
+          "index": -1,
+          "id": "idle",
+          "bounds": {
+            "minX": 6,
+            "minY": 3,
+            "maxX": 25,
+            "maxY": 45
+          },
+          "sha256Pixels": "c176759ecfdabbaf263e1874c7a95ae6d32eee3b42be604d6a8c963013f1035b"
+        },
+        {
+          "index": 0,
+          "id": "back-walk-1",
+          "bounds": {
+            "minX": 5,
+            "minY": 3,
+            "maxX": 25,
+            "maxY": 45
+          },
+          "sha256Pixels": "f9bf4ed71c9a1bf78455a52ea845ad50d79d0a9f83b61b7ce1158619090ef2fc"
+        },
+        {
+          "index": 1,
+          "id": "back-walk-2",
+          "bounds": {
+            "minX": 6,
+            "minY": 3,
+            "maxX": 25,
+            "maxY": 45
+          },
+          "sha256Pixels": "0f6505189dcd524d4730d4f0cb08ce5c54f7fdf7e5401a0614b6e55cad546fbb"
+        },
+        {
+          "index": 2,
+          "id": "back-walk-3",
+          "bounds": {
+            "minX": 6,
+            "minY": 3,
+            "maxX": 26,
+            "maxY": 45
+          },
+          "sha256Pixels": "abe0c2914c1a0228ed8fef206e27caecd29b4a8987edd92034f05b7f03ebbd33"
+        },
+        {
+          "index": 3,
+          "id": "back-walk-4",
+          "bounds": {
+            "minX": 5,
+            "minY": 3,
+            "maxX": 25,
+            "maxY": 45
+          },
+          "sha256Pixels": "792fedc8d952911e46bbc08e1be1a2500448b3099a36287b2146b621f26f8a18"
+        }
+      ]
+    }
+  ],
+  "browser": {
+    "executed": false,
+    "reason": "Browser executable unavailable in this environment",
+    "pending": [
+      "Playback, pause and manual stepping in a real browser",
+      "WASD and arrows after clicking the stage",
+      "Visual gait, body seams and transition to approved idle"
+    ]
+  },
+  "visualApproval": {
+    "idle": "approved",
+    "walk": "approved_by_product_owner",
+    "walkRecord": {
+      "date": "2026-10-19",
+      "statement": "okey si me gusta seguimos seguimos",
+      "scope": "Visual acceptance of the first walking preview; not a browser functional test",
+      "browserFunctionalTestsApproved": false
+    }
+  },
+  "nativePngExported": true,
+  "phaserIntegrationTested": false,
+  "nativeAtlas": {
+    "size": [
+      160,
+      192
+    ],
+    "frameCount": 20,
+    "sha256": "9765a29f50f42a180725d6737650c0360b13c6cb73c8fb39b38ebe4bdb23a211"
+  },
+  "localVerifier": {
+    "path": "tools/art-preview/check-avatar-walk.cjs",
+    "passed": true,
+    "report": "docs/qa/avatar-walk-v01-local-checks.json",
+    "checks": [
+      "JavaScript syntax and local data snapshot",
+      "Source and native atlas SHA-256",
+      "20 native frames and four complete cycles",
+      "Frame timing and loop boundaries",
+      "Idle selection and per-direction cycle order",
+      "Input directions, key release and stage bounds"
+    ]
+  },
+  "referenceVideo": {
+    "path": "docs/qa/avatar-walk-v01-preview.mp4",
+    "durationSeconds": 3,
+    "width": 800,
+    "height": 320,
+    "fps": 8,
+    "browserCapture": false
+  }
+}

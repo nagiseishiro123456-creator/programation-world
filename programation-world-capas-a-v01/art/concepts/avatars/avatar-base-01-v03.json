@@ -1,0 +1,206 @@
+{
+  "schemaVersion": 1,
+  "assetId": "avatar-base-01",
+  "project": "programation-world",
+  "version": "0.3",
+  "reviewStatus": "balanced_front_eyes_pending_product_owner_review",
+  "source": {
+    "path": "art/concepts/avatars/avatar-base-01-v01.png",
+    "size": [
+      2048,
+      768
+    ],
+    "mode": "RGBA",
+    "bytes": 1259401,
+    "sha256": "32efa0437a7f3599d8de9832f06a29e3da81adc4c0a149d9dcb1f30ae35ad8fe",
+    "alpha_min": 0,
+    "alpha_max": 254,
+    "fully_transparent_fraction": 0.7259915669759115
+  },
+  "frame": {
+    "width": 32,
+    "height": 48,
+    "anchor": {
+      "x": 16,
+      "y": 46
+    },
+    "sourceFrameWidth": 416,
+    "sourceFrameHeight": 624,
+    "downsampleFactor": 13
+  },
+  "views": [
+    {
+      "id": "front",
+      "sourceRect": {
+        "x": 67,
+        "y": 94,
+        "width": 416,
+        "height": 624
+      },
+      "visibleBounds": {
+        "x": 141,
+        "y": 124,
+        "width": 265,
+        "height": 569
+      },
+      "estimatedFootCenter": [
+        274.5,
+        692
+      ],
+      "sourceOverride": {
+        "path": "art/concepts/avatars/avatar-base-01-v03.png",
+        "size": [
+          2048,
+          768
+        ],
+        "mode": "RGBA",
+        "bytes": 1291104,
+        "sha256": "931d255e1da5569ad6713f6908e993007b672c703bf03a4cb179a67fab3c1eba",
+        "alpha_min": 0,
+        "alpha_max": 254,
+        "fully_transparent_fraction": 0.7231082916259766,
+        "purpose": "Front view only; balanced sclera and pupils; other directions retain v01",
+        "provenance": {
+          "method": "image_gen built-in, precise-object-edit",
+          "modelReported": null,
+          "transparentBackgroundRequested": true,
+          "editTarget": "art/concepts/avatars/avatar-base-01-v02.png",
+          "generatedOutputUnmodified": true,
+          "prompt": "Use case: precise-object-edit.\nEdit only the TWO FRONT EYES in the LEFTMOST character of this 2048 x 768 transparent pixel-art sheet. Keep all other details and all four figure positions as they are.\nThe current front eyes have oversized 2-pixel-wide white strips. Reduce the WHITE AREA BY ONE QUARTER in EACH eye, giving a balanced middle amount of white. The dark pupils should be slightly THICKER in the UPPER HALF of each eye and remain thin in the LOWER HALF. Preserve a stepped pixel-art boundary, not a perfectly rectangular pupil. Keep off-white sclera clearly visible beside the pupil. This is a subtle eye-interior correction, with the eye openings remaining the same height and outer width.\nPrecise front-eye drawing guide in SOURCE PIXELS: for the eye on viewer-left, make the upper white strip approximately x225..236, y285..301, and the lower white strip x225..248, y302..319. The dark pupil fills the rest to x260, becoming wider at the top. For the eye on viewer-right, make the upper white strip approximately x313..326,y285..301, and the lower white strip x301..326,y302..319; the dark pupil fills from x288 to the white strip. White is softly shaded ivory, not glowing pure white. This makes each eye's 3-by-2 tiny-pixel pattern have THREE white and THREE dark pixels: a natural middle amount. Do not simply restore the original fully tall rectangular black pupils.\nPreserve the identical hair, skin, face silhouette, neutral expression, jacket, shirt, backpack, pants, boots, outlines, pixel-art style, figure size and boots baseline. The three other views must remain unchanged. Preserve exact 2048 x 768 dimensions and true transparent alpha background, no new objects, no text or UI."
+        }
+      },
+      "samplingAlignment": {
+        "sourceOffsetRelativeToV01": [
+          1,
+          0
+        ],
+        "logicalOffset": [
+          0.07692307692307693,
+          0
+        ],
+        "reason": "One source-pixel crop alignment preserves three white and three dark sampled pixels per eye at 32x48; frame dimensions and anchor remain unchanged."
+      }
+    },
+    {
+      "id": "left",
+      "sourceRect": {
+        "x": 544,
+        "y": 94,
+        "width": 416,
+        "height": 624
+      },
+      "visibleBounds": {
+        "x": 629,
+        "y": 133,
+        "width": 264,
+        "height": 559
+      },
+      "estimatedFootCenter": [
+        752,
+        692
+      ]
+    },
+    {
+      "id": "right",
+      "sourceRect": {
+        "x": 1088,
+        "y": 94,
+        "width": 416,
+        "height": 624
+      },
+      "visibleBounds": {
+        "x": 1156,
+        "y": 133,
+        "width": 264,
+        "height": 559
+      },
+      "estimatedFootCenter": [
+        1296,
+        692
+      ]
+    },
+    {
+      "id": "back",
+      "sourceRect": {
+        "x": 1561,
+        "y": 94,
+        "width": 416,
+        "height": 624
+      },
+      "visibleBounds": {
+        "x": 1640,
+        "y": 133,
+        "width": 263,
+        "height": 559
+      },
+      "estimatedFootCenter": [
+        1769,
+        692
+      ]
+    }
+  ],
+  "animation": {
+    "state": "idle",
+    "walkingFramesProduced": false
+  },
+  "production": {
+    "native32x48PngExported": false,
+    "layersSeparated": false,
+    "engineIntegrationTested": false
+  },
+  "provenance": {
+    "method": "image_gen built-in, identity-preserve",
+    "modelReported": null,
+    "transparentBackgroundRequested": true,
+    "sourceReference": "art/concepts/Z01/campus-avatar-v01.png",
+    "prompt": "Use case: identity-preserve.\nAsset type: four-direction idle character turnaround on a genuinely transparent PNG background for the educational pixel-art game programation-world.\n\nEDIT TARGET: use the attached approved campus concept solely to extract and preserve the identity of the LEFTMOST avatar labeled BASE: short tousled brown hair, the same warm skin tone and youthful face, muted green padded jacket over gray shirt, navy trousers, brown ankle boots and a compact gray backpack. Ignore the blue and terracotta variants and ignore all scenery.\n\nCreate exactly FOUR full-body appearances of that SAME anonymous base avatar in a single horizontal row, in this LEFT-TO-RIGHT ORDER: (1) FRONT facing the viewer; (2) LEFT PROFILE facing screen-left; (3) RIGHT PROFILE facing screen-right; (4) BACK with face completely hidden and the same gray backpack clearly visible. Idle neutral pose only, arms relaxed. Identical head size, height, jacket length, clothes, shoes, skin and palette in all four views. Perspective must match a classic top-down 2D RPG with visible face and a little top of the head, rather than a realistic human turnaround. Side views must show the body actually facing the stated side, not merely the head turned. Keep details and character silhouette coherent with the approved BASE avatar.\n\nLayout: wide transparent sheet, ideally 2048 by 768 pixels, divided conceptually into four equal cells, one centered character per cell, generous transparent gaps between figures, all boots aligned on the same baseline. No figure may touch the outside edge or neighboring cell. Think of each character as designed for a 32 by 48 logical-pixel frame, enlarged consistently for inspection. Make the pixel art clear and readable at this small target size: crisp dark outlines, simple controlled shading, readable green jacket, visible backpack straps, no unnecessary tiny decoration.\n\nOutput ONLY the four character views with actual alpha transparency around and between them. No labels, numerals, text, frame borders, arrows, backgrounds, floor, shadows, buildings, logos, watermarks, stat panels or extra characters. Do not include the BASE/A/B labels from the source. Do not change the character or assign a personal name. This sheet is an art-source study; exact source geometry will be inspected afterward.",
+    "sourcePngUnmodified": true
+  },
+  "alphaAnalysisNote": "Bounds estimated using alpha > 32; low-opacity residual pixels outside those bounds are preserved in the original source.",
+  "revision": {
+    "request": "The user found v02 too white and requested a midpoint",
+    "previousManifest": "art/concepts/avatars/avatar-base-01-v02.json",
+    "frontUsesGeneratedRevision": true,
+    "otherViewsUseOriginalSource": true,
+    "target": "Balanced front eye interiors: intermediate white area, readable dark pupils",
+    "note": "Generated front view is not byte-identical outside the eyes; left/right/back still use the original PNG. Browser and artistic approval pending."
+  },
+  "comparisons": [
+    {
+      "id": "original",
+      "version": "0.1",
+      "label": "Original · v01",
+      "source": {
+        "path": "art/concepts/avatars/avatar-base-01-v01.png",
+        "size": [
+          2048,
+          768
+        ]
+      },
+      "sourceRect": {
+        "x": 66,
+        "y": 94,
+        "width": 416,
+        "height": 624
+      }
+    },
+    {
+      "id": "previous",
+      "version": "0.2",
+      "label": "Más blanco · v02",
+      "source": {
+        "path": "art/concepts/avatars/avatar-base-01-v02.png",
+        "size": [
+          2048,
+          768
+        ]
+      },
+      "sourceRect": {
+        "x": 66,
+        "y": 94,
+        "width": 416,
+        "height": 624
+      }
+    }
+  ]
+}

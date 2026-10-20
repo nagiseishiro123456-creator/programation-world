@@ -1,0 +1,283 @@
+{
+  "passed": true,
+  "checks": [
+    "JavaScript syntax, catalog snapshot and source integrity",
+    "Green default is byte-for-byte identical and transformations do not mutate it",
+    "All 60 frames preserve transparency, head, eyes, boots and non-green materials",
+    "Appearance JSON round-trip and rejection of unsupported or oversized input"
+  ],
+  "frameCount": 60,
+  "variants": [
+    {
+      "jacketId": "green",
+      "frames": [
+        {
+          "id": "front-idle",
+          "changedPixels": 0
+        },
+        {
+          "id": "front-walk-1",
+          "changedPixels": 0
+        },
+        {
+          "id": "front-walk-3",
+          "changedPixels": 0
+        },
+        {
+          "id": "front-walk-2",
+          "changedPixels": 0
+        },
+        {
+          "id": "front-walk-4",
+          "changedPixels": 0
+        },
+        {
+          "id": "left-idle",
+          "changedPixels": 0
+        },
+        {
+          "id": "left-walk-1",
+          "changedPixels": 0
+        },
+        {
+          "id": "left-walk-2",
+          "changedPixels": 0
+        },
+        {
+          "id": "left-walk-3",
+          "changedPixels": 0
+        },
+        {
+          "id": "left-walk-4",
+          "changedPixels": 0
+        },
+        {
+          "id": "right-idle",
+          "changedPixels": 0
+        },
+        {
+          "id": "right-walk-1",
+          "changedPixels": 0
+        },
+        {
+          "id": "right-walk-2",
+          "changedPixels": 0
+        },
+        {
+          "id": "right-walk-3",
+          "changedPixels": 0
+        },
+        {
+          "id": "right-walk-4",
+          "changedPixels": 0
+        },
+        {
+          "id": "back-idle",
+          "changedPixels": 0
+        },
+        {
+          "id": "back-walk-1",
+          "changedPixels": 0
+        },
+        {
+          "id": "back-walk-2",
+          "changedPixels": 0
+        },
+        {
+          "id": "back-walk-3",
+          "changedPixels": 0
+        },
+        {
+          "id": "back-walk-4",
+          "changedPixels": 0
+        }
+      ]
+    },
+    {
+      "jacketId": "blue",
+      "frames": [
+        {
+          "id": "front-idle",
+          "changedPixels": 103
+        },
+        {
+          "id": "front-walk-1",
+          "changedPixels": 96
+        },
+        {
+          "id": "front-walk-3",
+          "changedPixels": 93
+        },
+        {
+          "id": "front-walk-2",
+          "changedPixels": 105
+        },
+        {
+          "id": "front-walk-4",
+          "changedPixels": 100
+        },
+        {
+          "id": "left-idle",
+          "changedPixels": 71
+        },
+        {
+          "id": "left-walk-1",
+          "changedPixels": 81
+        },
+        {
+          "id": "left-walk-2",
+          "changedPixels": 85
+        },
+        {
+          "id": "left-walk-3",
+          "changedPixels": 85
+        },
+        {
+          "id": "left-walk-4",
+          "changedPixels": 81
+        },
+        {
+          "id": "right-idle",
+          "changedPixels": 70
+        },
+        {
+          "id": "right-walk-1",
+          "changedPixels": 95
+        },
+        {
+          "id": "right-walk-2",
+          "changedPixels": 84
+        },
+        {
+          "id": "right-walk-3",
+          "changedPixels": 92
+        },
+        {
+          "id": "right-walk-4",
+          "changedPixels": 85
+        },
+        {
+          "id": "back-idle",
+          "changedPixels": 80
+        },
+        {
+          "id": "back-walk-1",
+          "changedPixels": 72
+        },
+        {
+          "id": "back-walk-2",
+          "changedPixels": 72
+        },
+        {
+          "id": "back-walk-3",
+          "changedPixels": 70
+        },
+        {
+          "id": "back-walk-4",
+          "changedPixels": 75
+        }
+      ]
+    },
+    {
+      "jacketId": "terracotta",
+      "frames": [
+        {
+          "id": "front-idle",
+          "changedPixels": 103
+        },
+        {
+          "id": "front-walk-1",
+          "changedPixels": 96
+        },
+        {
+          "id": "front-walk-3",
+          "changedPixels": 93
+        },
+        {
+          "id": "front-walk-2",
+          "changedPixels": 105
+        },
+        {
+          "id": "front-walk-4",
+          "changedPixels": 100
+        },
+        {
+          "id": "left-idle",
+          "changedPixels": 71
+        },
+        {
+          "id": "left-walk-1",
+          "changedPixels": 81
+        },
+        {
+          "id": "left-walk-2",
+          "changedPixels": 85
+        },
+        {
+          "id": "left-walk-3",
+          "changedPixels": 85
+        },
+        {
+          "id": "left-walk-4",
+          "changedPixels": 81
+        },
+        {
+          "id": "right-idle",
+          "changedPixels": 70
+        },
+        {
+          "id": "right-walk-1",
+          "changedPixels": 95
+        },
+        {
+          "id": "right-walk-2",
+          "changedPixels": 84
+        },
+        {
+          "id": "right-walk-3",
+          "changedPixels": 92
+        },
+        {
+          "id": "right-walk-4",
+          "changedPixels": 85
+        },
+        {
+          "id": "back-idle",
+          "changedPixels": 80
+        },
+        {
+          "id": "back-walk-1",
+          "changedPixels": 72
+        },
+        {
+          "id": "back-walk-2",
+          "changedPixels": 72
+        },
+        {
+          "id": "back-walk-3",
+          "changedPixels": 70
+        },
+        {
+          "id": "back-walk-4",
+          "changedPixels": 75
+        }
+      ]
+    }
+  ],
+  "browserExecuted": false,
+  "phaserIntegrated": false,
+  "visualApproval": "jacket_colors_visual_approved_by_product_owner",
+  "approval": {
+    "date": "2026-10-19",
+    "statement": "si me gustan avanzamos",
+    "scope": "Visual approval of green, blue and terracotta jacket colors; does not certify browser functional tests",
+    "browserFunctionalTestsApproved": false
+  },
+  "manualChecksPending": [
+    "Color selection and direction controls in browser",
+    "Walking, idle and manual frame stepping in browser",
+    "Download and reimport appearance JSON",
+    "Invalid import feedback",
+    "Keyboard focus and desktop layouts"
+  ]
+}

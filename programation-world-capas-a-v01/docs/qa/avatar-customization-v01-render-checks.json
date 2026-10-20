@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "renderedFrames": 60,
+  "headRows0Through18Identical": true,
+  "sourcePngVsDefaultCanvasMaximumChannelDelta": 0,
+  "referenceCanvas": "@napi-rs/canvas",
+  "browserExecuted": false,
+  "image": "docs/qa/avatar-customization-v01-comparison.png"
+}

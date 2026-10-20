@@ -1,0 +1,261 @@
+{
+  "schemaVersion": 1,
+  "assetId": "avatar-head-layers-a",
+  "version": "0.1",
+  "date": "2026-10-19",
+  "reviewStatus": "native_a_layers_pending_visual_review",
+  "scope": "First production test: original and A only. Original, A and B concepts are approved; B production follows after this layer test.",
+  "frame": {
+    "width": 32,
+    "height": 48,
+    "anchor": {
+      "x": 16,
+      "y": 46
+    }
+  },
+  "atlas": {
+    "width": 160,
+    "height": 192
+  },
+  "layerStrip": {
+    "width": 128,
+    "height": 48
+  },
+  "replaceAboveY": 20,
+  "bodyUnchangedFromY": 22,
+  "source": {
+    "path": "art/concepts/avatars/avatar-head-layers-a-source-v02.png",
+    "size": [
+      1774,
+      887
+    ],
+    "sha256": "d2d26c5cf429cf04ab6ee45409d9d382a6b560ece6664063a9379a59d199cf22",
+    "sourcePngUnmodified": true
+  },
+  "views": [
+    {
+      "id": "front",
+      "column": 0,
+      "neutralSource": {
+        "x": 69,
+        "y": 124,
+        "width": 308,
+        "height": 299
+      },
+      "neutralDestination": {
+        "x": 8,
+        "y": 6,
+        "width": 16,
+        "height": 15
+      },
+      "hairSource": {
+        "x": 47,
+        "y": 485,
+        "width": 361,
+        "height": 278
+      },
+      "hairDestination": {
+        "x": 5,
+        "y": 3,
+        "width": 22,
+        "height": 16
+      },
+      "facePatches": [
+        {
+          "x": 10,
+          "y": 14,
+          "width": 12,
+          "height": 6
+        }
+      ],
+      "eyePatches": [
+        {
+          "x": 12,
+          "y": 14,
+          "width": 3,
+          "height": 3
+        },
+        {
+          "x": 17,
+          "y": 14,
+          "width": 3,
+          "height": 3
+        }
+      ]
+    },
+    {
+      "id": "left",
+      "column": 1,
+      "neutralSource": {
+        "x": 526,
+        "y": 123,
+        "width": 283,
+        "height": 297
+      },
+      "neutralDestination": {
+        "x": 10,
+        "y": 6,
+        "width": 15,
+        "height": 15
+      },
+      "hairSource": {
+        "x": 473,
+        "y": 485,
+        "width": 372,
+        "height": 303
+      },
+      "hairDestination": {
+        "x": 8,
+        "y": 3,
+        "width": 19,
+        "height": 17
+      },
+      "facePatches": [
+        {
+          "x": 10,
+          "y": 14,
+          "width": 9,
+          "height": 6
+        }
+      ],
+      "eyePatches": [
+        {
+          "x": 11,
+          "y": 14,
+          "width": 4,
+          "height": 3
+        }
+      ]
+    },
+    {
+      "id": "right",
+      "column": 2,
+      "neutralSource": {
+        "x": 967,
+        "y": 123,
+        "width": 282,
+        "height": 296
+      },
+      "neutralDestination": {
+        "x": 7,
+        "y": 6,
+        "width": 15,
+        "height": 15
+      },
+      "hairSource": {
+        "x": 929,
+        "y": 485,
+        "width": 371,
+        "height": 303
+      },
+      "hairDestination": {
+        "x": 5,
+        "y": 3,
+        "width": 19,
+        "height": 17
+      },
+      "facePatches": [
+        {
+          "x": 13,
+          "y": 14,
+          "width": 9,
+          "height": 6
+        }
+      ],
+      "eyePatches": [
+        {
+          "x": 17,
+          "y": 14,
+          "width": 4,
+          "height": 3
+        }
+      ]
+    },
+    {
+      "id": "back",
+      "column": 3,
+      "neutralSource": {
+        "x": 1397,
+        "y": 123,
+        "width": 309,
+        "height": 297
+      },
+      "neutralDestination": {
+        "x": 8,
+        "y": 6,
+        "width": 16,
+        "height": 15
+      },
+      "hairSource": {
+        "x": 1373,
+        "y": 484,
+        "width": 354,
+        "height": 304
+      },
+      "hairDestination": {
+        "x": 5,
+        "y": 3,
+        "width": 22,
+        "height": 17
+      },
+      "facePatches": [],
+      "eyePatches": []
+    }
+  ],
+  "production": {
+    "conceptsApproved": [
+      "original",
+      "a",
+      "b"
+    ],
+    "implementedTestStyles": [
+      "original",
+      "a"
+    ],
+    "nativeStyleBExported": false,
+    "appearanceFileSchemaChanged": false,
+    "phaserIntegrated": false,
+    "browserTested": false,
+    "preparedForLocalReview": "2026-10-20",
+    "headAndHairLayerPngExported": true,
+    "nativeStyleAComposed": true
+  },
+  "exports": {
+    "neutral": "art/exports/avatars/avatar-neutral-head-v01.png",
+    "hairA": "art/exports/avatars/avatar-hair-sidepart-v01.png"
+  },
+  "provenance": {
+    "method": "image_gen built-in, identity-preserve then precise-object-edit",
+    "modelReported": null,
+    "transparentBackgroundRequested": true,
+    "steps": [
+      {
+        "sourcePath": "art/concepts/avatars/avatar-head-layers-a-source-v01.png",
+        "sha256": "a83fbd03571bfdbd1edff015fb93c0e68f0ce1ff6291c5ee389dc84b074f8132",
+        "prompt": "Use case: identity-preserve.\nAsset type: ONE technical transparent RGBA SOURCE ATLAS containing the two separable HEAD LAYERS for the first approved hairstyle A in the game programation-world.\nInput image 1 is the approved hairstyle concept board. Use ONLY ROW A \"Corto con raya\", ignoring row B completely. Input image 2 is the approved existing avatar identity and face.\nOutput: wide transparent PNG, aspect ratio 2:1, ideally 2048 x 1024. STRICT grid FOUR COLUMNS, TWO ROWS, eight isolated layer pieces, generous clear margins, no labels/grid/text. Each of the eight cells is 512 x 512 in the intended layout; all layer pieces share exactly the same head center and scale so top and bottom rows overlay perfectly when their cell origins are aligned.\nColumn order for BOTH rows: FRONT toward viewer, LEFT-facing full profile, RIGHT-facing full profile, BACK.\nROW 1: only a NEUTRAL BARE HEAD layer in four directions. Remove every single strand of hair; smooth clean bare scalp with warm skin and a small neck. Keep the reference avatar head proportions, skin, ears, face expression and face camera. No torso, no jacket, no body, no backpack, no shoulders. Back head shows only skin of skull, ears and nape, never a face. It is an internal under-hair layer, not a new hairstyle. Top of bare skull about y100 of each cell, bottom of chin y308, neck ends y340. Skull width about 230 pixels; ears extend to around x112 and x400. Face eyes are centered around local y248, mouthless simple reference expression.\nROW 2: only the BROWN HAIR layer of approved hairstyle A in the SAME four directions, aligned exactly to row1 head positions. A is a short neat side-part with side-swept fringe, compact rounded crown, visible ears, tapered short nape. Match the brown shades, controlled highlights and shape of ROW A in input1, clearly different from the original spiky tousled base. Hair layer contains ONLY hair and its dark outlines; remove ALL skin, eyes, ears, face, neck, clothing and body. All face openings and the space below the hair must be genuinely transparent. The front wig has an OPEN TRANSPARENT lower face area: an asymmetrical fringe above the eyes and two small sideburns at the sides, never a solid brown helmet covering the eyes. Profiles leave visible face opening and ears transparent. Back hair is a solid hair cap, ending at the nape. Hair crown at about y48 in each cell, outer width around 340 pixels x86..426, sideburns end no lower than y310. No hanging hair past the neck.\nStyle: detailed chunky pixel art for a 32x48 top-down RPG avatar, dark blocky outlines, small readable pixel clusters, controlled shading, same identity as reference. No glow, no painted shadow on transparency, no 3D gloss, no antialias blur, no white matte.\nCritical front eye appearance in ROW1 only: viewer-left eye has a narrow WHITE OUTER-LEFT strip and wider BLACK INNER-RIGHT pupil; viewer-right eye has BLACK INNER-LEFT pupil and narrow WHITE OUTER-RIGHT strip. Black about two thirds of width. No pupils in hair-only row2. The game will reuse approved native eye pixels later.\nConstraints: true alpha background everywhere except the layer pieces, including open face hole in the hair wigs. Do not repeat full character figures. Do not include any torso, old spiky hair, medium-length bob, accessories, text, diagrams, guide lines, checkerboard drawn into the image, logos or scenery. This is a registered layer atlas, not an illustrated concept poster.",
+        "references": [
+          "art/concepts/avatars/avatar-hair-options-v01.png",
+          "art/concepts/avatars/avatar-base-01-v04.png"
+        ]
+      },
+      {
+        "sourcePath": "art/concepts/avatars/avatar-head-layers-a-source-v02.png",
+        "sha256": "d2d26c5cf429cf04ab6ee45409d9d382a6b560ece6664063a9379a59d199cf22",
+        "prompt": "Use case: precise-object-edit.\nEdit target: the supplied transparent two-row four-column head layer atlas.\nMake ONE targeted correction ONLY in the LOWER ROW (four brown hair-only layers): remove every visible peach skin pixel, forehead patch, ear, face or neck fragment from all four hair pieces and replace those skin fragments with genuine transparency. Bottom row must contain brown HAIR and hair outlines ONLY. Preserve the shape, shading, position, size and side-part identity of each hair piece. The open face hole in each hair wig must remain transparent. Do not add any face, eyes, head or body.\nPreserve the TOP ROW of four bare heads exactly as it is, including its eyes and skin. Preserve the overall image dimensions, transparent background, grid alignment and all four direction orders. No scaling or reframing. Do not add labels, borders, checkerboard, shadow or anything else.\nResult remains a transparent RGBA source atlas, with all top-row pieces unchanged and only the accidental skin removed from the bottom-row hair pieces.",
+        "references": [
+          "art/concepts/avatars/avatar-head-layers-a-source-v01.png"
+        ]
+      }
+    ],
+    "note": "Source PNGs unmodified. v02 removes accidental skin from the hair-only row. Native crops, face reuse and direct eye replacement are runtime composition; generated neutral eyes are not used as final approved eyes."
+  },
+  "exportHashes": {
+    "neutral": "a290bb1ebed7812dac8524b1b09e141a009d7abaff532c801181d817445c5c66",
+    "hair": "df1464dd6c986b7d401fb5a617ecc9fcf8a6148adcbd715a0c191dec2faae223"
+  },
+  "exportTool": {
+    "name": "@napi-rs/canvas",
+    "version": "0.1.100",
+    "smoothing": false
+  }
+}

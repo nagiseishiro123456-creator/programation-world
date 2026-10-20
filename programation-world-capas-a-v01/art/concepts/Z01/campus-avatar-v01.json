@@ -1,0 +1,63 @@
+{
+  "project": "programation-world",
+  "story": "S0-03",
+  "created_on": "2026-10-19",
+  "version": "0.1",
+  "review_status": "pending_product_owner_review",
+  "method": "image_gen built-in: generation from local references and a targeted editing iteration",
+  "tool_model_reported": null,
+  "output": {
+    "relative_path": "art/concepts/Z01/campus-avatar-v01.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "bytes": 2087001,
+    "sha256": "2a12292d99f3bd14b3aee81819acd4005d6dd90e1b018e4a88fd6a19c2396570"
+  },
+  "approved_working_targets": {
+    "world_view": [
+      960,
+      540
+    ],
+    "tile": [
+      32,
+      32
+    ],
+    "avatar_frame": [
+      32,
+      48
+    ]
+  },
+  "exact_production_dimensions_verified": false,
+  "references": [
+    {
+      "id": "REF-10",
+      "path": "art/references/originals/ref-10.jpg",
+      "sha256": "05bfbce85a917ad53de7deae0938c07357b3d8ff989c56d43e7e34439ea89efe"
+    },
+    {
+      "id": "REF-12",
+      "path": "art/references/originals/ref-12.jpg",
+      "sha256": "ede17e4e3aee5c0792ad5e1be6aa426bbb8ac5ab84a647b32deed1ca67627a54"
+    },
+    {
+      "id": "REF-13",
+      "path": "art/references/originals/ref-13.png",
+      "sha256": "514c2ec0bee2fa4b2d31c805e1f1ea715a8b11a77f5887047f0911b6205d7627"
+    }
+  ],
+  "prompts": [
+    {
+      "iteration": 1,
+      "role": "Initial campus concept derived from REF-10, with REF-12 and REF-13 as supporting character references",
+      "text": "Use case: style-transfer.\nAsset type: first static visual-style concept for the educational 2D browser game programation-world. This is a concept mockup for art review, not a working game or a production sprite sheet.\n\nInput images: Image 1 is the campus scene EDIT TARGET (REF-10). Images 2 and 3 are supporting references for character design and customization only. Edit the first image into a coherent new sample of a FICTIONAL educational institute, preserving its top-down RPG camera, visible building facades, brick textures, campus paths and the familiar detailed pixel-art atmosphere. Use the supporting images to match character proportions and clothing detail.\n\nComposition: wide 16:9 landscape, ideally 1920 by 1080. A readable entrance courtyard, a red-brick academic building with windows and a central open entrance, paved path, low boundary fence, benches and restrained greenery. Keep the same coherent daylight and dark pixel outlines across all objects. Simplify the campus to focus on the entrance, doorway, path and scale of the characters. No crowd: exactly three avatar appearances in a short row on the courtyard path, clearly separated and facing the same direction. All three represent the SAME customizable base avatar, with identical face, skin tone, body proportions, pose, trousers, brown boots and gray backpack. Change only hair and outer jacket between the three. Base: short brown hair and muted green jacket. Variant A: copper hair and muted blue jacket. Variant B: dark curly hair and terracotta jacket. The variants must remain visibly the same person and same scale. Keep their pixel size modest relative to the door and bench, approximately the proportions of 32x48 character frames on a 32x32 tile grid viewed in a 960x540 game camera. Do not make giant portraits or oversized chibi heads.\n\nOnly exact Spanish text: a plain building sign \"INSTITUTO\"; labels immediately below the three avatars \"BASE\", \"A\", \"B\"; one uncluttered light speech bubble pointing only to the base avatar, reading \"¡Vamos a programar!\". Let the dialogue be readable without covering faces or the door. No other words or numerals.\n\nPalette guide: dark outlines #1F2933, warm light panels #F4E8D3, terracotta brick #B9684B, pale paths #D8C5A4, muted vegetation #607565, cool glass #8CB8C4, restrained gold #D8A64A. Detailed consistent pixel-art textures with crisp edges; retain the handcrafted game atmosphere of the input scene, with enough detail in roof, brick, coat and backpack to compare quality. Do not turn it into flat vector art or a glossy 3D render.\n\nRemove all institutional names, logos, crests, UPeU references, recognizable branded identity, and all existing health/mana bars, skill HUD, minimap and bottom mission panel from the edit target. No combat, attacks, health bars, stress meters, economy, payments, new missions or statistics. No exact real institution identity. No combat elements from any reference. No invented logos, watermarks, signatures or labels claiming that this concept proves exact pixel dimensions. Preserve consistency between the three avatar variations."
+    },
+    {
+      "iteration": 2,
+      "role": "Selected output: targeted reduction of avatar scale",
+      "text": "Edit this generated campus concept with ONE targeted correction: reduce the size of all three avatar bodies to exactly about 65 percent of their current width and height, keeping their feet on the same courtyard path baseline and preserving their separate centers and spacing. They should now be clearly shorter than the glass doorway and approximately fit the proportions of a 32x48 sprite on the scene's implied 960x540 base view. Preserve the SAME individual face, skin tone, body proportions, poses and original differences in hair and jacket of BASE, A and B. Keep all three appearances at the same reduced scale. Adjust only the speech-bubble tail and placement of the existing BASE/A/B labels if needed so they remain associated with the smaller avatars. The bubble text must remain exactly \"¡Vamos a programar!\" and the building sign exactly \"INSTITUTO\". Preserve all architecture, composition, camera, sky, plants, benches, paths, palette, pixel-art rendering, image aspect ratio and every other feature. This is a precise character-scale correction, not a redesign. No new characters, text, objects, HUD, combat, brands or symbols."
+    }
+  ],
+  "selected_iteration": 2,
+  "provenance_review": "Reference AI generation confirmed by owner; reference tool, input material and terms remain to be documented."
+}

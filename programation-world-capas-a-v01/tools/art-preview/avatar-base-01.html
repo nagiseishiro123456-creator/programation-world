@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>programation-world · Prueba del avatar</title>
+  <style>
+    :root{color-scheme:light;--ink:#1f2933;--cream:#f4e8d3;--green:#2d6a4f;--edge:#c8bba5;--muted:#52616b;--surface:#fffaf1}
+    *{box-sizing:border-box}body{margin:0;background:var(--cream);color:var(--ink);font:16px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}
+    main{max-width:1200px;margin:auto;padding:32px 28px 48px}header{display:flex;align-items:center;justify-content:space-between;gap:24px;margin-bottom:28px}.eyebrow{font-size:13px;font-weight:750;letter-spacing:.09em;text-transform:uppercase;color:var(--green)}h1{font-size:clamp(26px,3vw,38px);line-height:1.15;margin:6px 0 10px}h2{font-size:20px;margin:0 0 14px}p{margin:8px 0}.muted{color:var(--muted)}code,.mono{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:.9em}.pill{background:#e4edde;color:#244c39;border:1px solid #a8bba3;padding:7px 12px;border-radius:22px;white-space:nowrap;font-size:13px;font-weight:700}.intro{max-width:760px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.panel{background:var(--surface);border:1px solid var(--edge);border-radius:16px;padding:22px;min-width:0}.controls{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:16px 0}.buttons{display:flex;gap:7px;flex-wrap:wrap}button,select{font:inherit;border-radius:8px;border:1px solid #8a9589;padding:8px 12px;color:var(--ink);background:#fffdf8}button{cursor:pointer}button[aria-pressed="true"]{background:var(--green);color:#fffdf8;border-color:var(--green)}button:focus-visible,select:focus-visible,a:focus-visible{outline:3px solid #9c650b;outline-offset:3px}label{font-size:14px;font-weight:650}select{font-size:14px;max-width:100%}canvas{image-rendering:pixelated;image-rendering:crisp-edges;vertical-align:middle}
+    .checker{background-color:#fffdf8;background-image:linear-gradient(45deg,#e1ddcf 25%,transparent 25%),linear-gradient(-45deg,#e1ddcf 25%,transparent 25%),linear-gradient(45deg,transparent 75%,#e1ddcf 75%),linear-gradient(-45deg,transparent 75%,#e1ddcf 75%);background-size:16px 16px;background-position:0 0,0 8px,8px -8px,-8px 0}
+    .inspection{min-height:260px;display:grid;place-items:center;padding:16px;border:1px solid var(--edge);border-radius:10px;overflow:auto}.frame-wrap{position:relative;display:inline-flex;border:1px dashed #6f7d75;flex-shrink:0}.anchor{position:absolute;left:50%;top:95.833333%;width:12px;height:12px;transform:translate(-50%,-50%);pointer-events:none}.anchor:before,.anchor:after{content:"";position:absolute;background:#9c3d3d}.anchor:before{left:5px;top:0;width:2px;height:12px}.anchor:after{left:0;top:5px;width:12px;height:2px}.anchor[hidden]{display:none}.stage{width:100%;height:auto;aspect-ratio:5/3;border:1px solid var(--edge);border-radius:10px;display:block}.legend{font-size:14px;margin-top:12px;color:var(--muted)}.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:20px}.card{text-align:center;background:var(--surface);border:1px solid var(--edge);border-radius:12px;padding:18px 12px;min-width:0}.card h3{font-size:16px;margin:0 0 12px}.samples{display:flex;justify-content:center;align-items:flex-end;gap:16px}.native-frame{padding:0;border:0;outline:1px dashed #87948a;background:#f4f6ef;width:32px;height:48px}.zoomed{width:96px;height:144px}.card .muted{font-size:12px;margin-top:12px}.source{margin-top:20px}.source img{display:block;width:100%;height:auto;max-height:350px;object-fit:contain}.source .checker{border:1px solid var(--edge);border-radius:10px;overflow:hidden}.metadata{display:flex;flex-wrap:wrap;gap:10px 22px;font-size:13px;margin-top:14px}.metadata strong{font-family:ui-monospace,Consolas,monospace}a{color:#24523c;text-underline-offset:3px}footer{font-size:14px;color:var(--muted);margin-top:24px}.error{border-left:4px solid #9c3d3d;background:#fff3ef;padding:14px;color:#6c2424}.status{font-size:13px;color:var(--green);margin-top:14px}
+    @media(max-width:850px){main{padding:22px 16px}header{align-items:flex-start;flex-direction:column;gap:10px}.grid{grid-template-columns:1fr}.gallery{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:440px){.samples{gap:8px}.gallery{grid-template-columns:1fr}.panel{padding:16px}}
+  </style>
+</head>
+<body>
+<main>
+  <header><div><div class="eyebrow">programation-world · S0-03</div><h1>Prueba del avatar base</h1><p class="muted intro">Revisa las cuatro vistas, la transparencia y el apoyo de los pies. Esta página sirve para inspeccionar el recurso de reposo.</p></div><span class="pill">Reposo v04 aprobado</span></header>
+  <div id="error" class="error" hidden></div>
+  <section class="grid" aria-label="Inspección del avatar">
+    <div class="panel">
+      <h2>Vista y tamaño</h2>
+      <div class="buttons" id="views" aria-label="Dirección del avatar"></div>
+      <div class="controls"><label for="zoom">Ampliación</label><select id="zoom"><option value="1">1× · tamaño de prueba</option><option value="4" selected>4× · revisar píxeles</option><option value="8">8× · revisar bordes</option></select><label for="background">Fondo</label><select id="background"><option value="checker">Cuadrícula</option><option value="light">Claro</option><option value="dark">Oscuro</option></select></div>
+      <div class="inspection checker" id="inspection"><div class="frame-wrap"><canvas id="selected" width="32" height="48" aria-label="Vista ampliada del avatar"></canvas><span class="anchor" id="anchor" aria-hidden="true"></span></div></div>
+      <p class="legend">Cuadro de prueba: <strong>32 × 48 px</strong>. La cruz marca el anclaje en <span class="mono">(16, 46)</span>.</p>
+    </div>
+    <div class="panel">
+      <h2>Apoyo sobre la cuadrícula</h2>
+      <canvas id="stage" width="320" height="192" class="stage" aria-label="Avatar situado en una cuadrícula de 32 píxeles"></canvas>
+      <p class="legend">Cada celda mide <strong>32 × 32 px</strong>. Cambiar la dirección conserva el punto de apoyo indicado por la cruz.</p>
+      <div class="metadata"><span>Recurso: <strong id="asset-id"></strong></span><span>Vista: <strong id="view-name"></strong></span><span>Estado: <strong>reposo</strong></span></div>
+      <p class="status" id="status" role="status">Cargando la lámina local…</p>
+    </div>
+  </section>
+  <section id="gallery" class="gallery" aria-label="Comparación de las cuatro vistas"></section>
+  <section class="panel source" aria-label="Comparación del ajuste de ojos"><h2>Ojos de frente: las tres versiones</h2><div class="controls" style="justify-content:space-evenly"><figure style="text-align:center"><figcaption>Original · v01</figcaption><canvas id="front-before" width="32" height="48" class="checker" style="width:128px;height:192px" aria-label="Frente anterior ampliado cuatro veces"></canvas></figure><figure style="text-align:center"><figcaption>Anterior · v03</figcaption><canvas id="front-previous" width="32" height="48" class="checker" style="width:128px;height:192px" aria-label="Frente v03 ampliado cuatro veces"></canvas></figure><figure style="text-align:center"><figcaption>Pupilas interiores · v04</figcaption><canvas id="front-after" width="32" height="48" class="checker" style="width:128px;height:192px" aria-label="Frente con pupilas negras hacia el centro y blanco exterior, ampliado cuatro veces"></canvas></figure></div><p class="legend">Los tres se dibujan en 32 × 48 px. La galería superior muestra también el tamaño real. En v04, ambos bloques negros quedan hacia el centro y el blanco en los extremos exteriores. Aspecto v04 aprobado por el Product Owner.</p></section>
+  <section class="panel source"><h2>Lámina de origen de la vista seleccionada</h2><div class="checker"><img id="source" alt="Lámina de referencia del avatar sobre transparencia"></div><p class="legend">Origen: <strong id="source-size"></strong>, PNG RGBA. El frente usa la distribución de ojos v04; izquierda, derecha y espalda conservan la lámina v01. Las fuentes anteriores se conservan sin modificar.</p><p class="legend"><a href="../../art/concepts/avatars/avatar-base-01-v04.json">Datos de cuadros y prompt exacto</a> · <a href="../../docs/design/avatar-base-01.md">Ficha del avatar</a> · <a href="../../docs/design/avatar-eye-review-v04.md">Registro del ajuste</a></p></section>
+  <footer>El reposo v04 está aprobado. Revisa la primera marcha en <a href="avatar-walk.html">avatar-walk.html</a>. La personalización por capas y la integración en Phaser siguen pendientes.</footer>
+</main>
+<script id="avatar-data" type="application/json">{"assetId": "avatar-base-01", "version": "0.4", "source": {"path": "art/concepts/avatars/avatar-base-01-v01.png", "size": [2048, 768]}, "frame": {"width": 32, "height": 48, "anchor": {"x": 16, "y": 46}, "sourceFrameWidth": 416, "sourceFrameHeight": 624, "downsampleFactor": 13}, "views": [{"id": "front", "sourceRect": {"x": 66, "y": 94, "width": 416, "height": 624}, "visibleBounds": {"x": 142, "y": 131, "width": 263, "height": 562}, "estimatedFootCenter": [274.5, 692], "sourceOverride": {"path": "art/concepts/avatars/avatar-base-01-v04.png", "size": [2048, 768]}, "nativeEyeSampling": {"purpose": "Preserve the user reference eye geometry when drawing the high-resolution art into 32x48. Sample the existing PNG colors; do not edit the source PNG. Applies only to the active front view, not historical comparisons.", "patches": [{"id": "viewer_left_top_cap", "sourceRect": {"x": 242, "y": 280, "width": 10, "height": 5}, "destinationRect": {"x": 12, "y": 14, "width": 3, "height": 1}}, {"id": "viewer_right_top_cap", "sourceRect": {"x": 304, "y": 280, "width": 8, "height": 5}, "destinationRect": {"x": 17, "y": 14, "width": 3, "height": 1}}, {"id": "viewer_left_outer_white", "sourceRect": {"x": 230, "y": 289, "width": 6, "height": 26}, "destinationRect": {"x": 12, "y": 15, "width": 1, "height": 2}}, {"id": "viewer_left_inner_pupil", "sourceRect": {"x": 242, "y": 288, "width": 12, "height": 28}, "destinationRect": {"x": 13, "y": 15, "width": 2, "height": 2}}, {"id": "viewer_right_inner_pupil", "sourceRect": {"x": 301, "y": 288, "width": 11, "height": 28}, "destinationRect": {"x": 17, "y": 15, "width": 2, "height": 2}}, {"id": "viewer_right_outer_white", "sourceRect": {"x": 318, "y": 289, "width": 5, "height": 26}, "destinationRect": {"x": 19, "y": 15, "width": 1, "height": 2}}]}}, {"id": "left", "sourceRect": {"x": 544, "y": 94, "width": 416, "height": 624}, "visibleBounds": {"x": 629, "y": 133, "width": 264, "height": 559}, "estimatedFootCenter": [752, 692]}, {"id": "right", "sourceRect": {"x": 1088, "y": 94, "width": 416, "height": 624}, "visibleBounds": {"x": 1156, "y": 133, "width": 264, "height": 559}, "estimatedFootCenter": [1296, 692]}, {"id": "back", "sourceRect": {"x": 1561, "y": 94, "width": 416, "height": 624}, "visibleBounds": {"x": 1640, "y": 133, "width": 263, "height": 559}, "estimatedFootCenter": [1769, 692]}], "comparisons": [{"id": "original", "version": "0.1", "label": "Original · v01", "source": {"path": "art/concepts/avatars/avatar-base-01-v01.png", "size": [2048, 768]}, "sourceRect": {"x": 66, "y": 94, "width": 416, "height": 624}}, {"id": "previous", "version": "0.3", "label": "Anterior · v03", "source": {"path": "art/concepts/avatars/avatar-base-01-v03.png", "size": [2048, 768]}, "sourceRect": {"x": 67, "y": 94, "width": 416, "height": 624}, "nativeEyeSampling": null}]}</script>
+<script>
+  'use strict';
+  const asset=JSON.parse(document.getElementById('avatar-data').textContent);
+  const labels={front:'Frente',left:'Izquierda',right:'Derecha',back:'Espalda'};
+  const images=new Map();
+  let current='front',ready=false;
+  const sourceFor=id=>asset.views.find(v=>v.id===id).sourceOverride||asset.source;
+  const selected=document.getElementById('selected');
+  const stage=document.getElementById('stage');
+  const zoom=document.getElementById('zoom');
+  function drawFrame(ctx,id,x=0,y=0,m=1,sourceOverride=null,rectOverride=null){
+    const view=asset.views.find(v=>v.id===id);
+    const r=rectOverride||view.sourceRect;
+    const source=sourceOverride||sourceFor(id);
+    ctx.imageSmoothingEnabled=false;
+    ctx.drawImage(images.get(source.path),r.x,r.y,r.width,r.height,x,y,asset.frame.width*m,asset.frame.height*m);
+    if(!sourceOverride&&view.nativeEyeSampling){
+      for(const patch of view.nativeEyeSampling.patches){
+        const s=patch.sourceRect,d=patch.destinationRect;
+        ctx.clearRect(x+d.x*m,y+d.y*m,d.width*m,d.height*m);
+        ctx.drawImage(images.get(source.path),s.x,s.y,s.width,s.height,x+d.x*m,y+d.y*m,d.width*m,d.height*m);
+      }
+    }
+  }
+  function render(){
+    if(!ready)return;
+    const ctx=selected.getContext('2d');ctx.clearRect(0,0,32,48);drawFrame(ctx,current);
+    selected.style.width=(32*Number(zoom.value))+'px';selected.style.height=(48*Number(zoom.value))+'px';
+    const s=stage.getContext('2d');s.imageSmoothingEnabled=false;s.fillStyle='#eef1e8';s.fillRect(0,0,320,192);
+    s.strokeStyle='#c9d0c1';s.lineWidth=1;
+    for(let x=0;x<=320;x+=32){s.beginPath();s.moveTo(x+.5,0);s.lineTo(x+.5,192);s.stroke()}
+    for(let y=0;y<=192;y+=32){s.beginPath();s.moveTo(0,y+.5);s.lineTo(320,y+.5);s.stroke()}
+    const ax=160,ay=144,ox=ax-asset.frame.anchor.x,oy=ay-asset.frame.anchor.y;
+    s.setLineDash([2,2]);s.strokeStyle='#6f7d75';s.strokeRect(ox+.5,oy+.5,32,48);s.setLineDash([]);
+    drawFrame(s,current,ox,oy);
+    s.strokeStyle='#9c3d3d';s.beginPath();s.moveTo(ax-4,ay+.5);s.lineTo(ax+5,ay+.5);s.moveTo(ax+.5,ay-4);s.lineTo(ax+.5,ay+5);s.stroke();
+    document.querySelectorAll('[data-view]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.view===current)));
+    document.getElementById('view-name').textContent=labels[current];
+    const source=sourceFor(current);
+    document.getElementById('source').src='../../'+source.path;
+    document.getElementById('source-size').textContent=source.size.join(' × ')+' px';
+    document.getElementById('status').textContent='Láminas cargadas · frente v04 y otras vistas v01';
+    window.avatarPreviewState={ready:true,view:current,version:asset.version,source:source.path,frame:[32,48],anchor:[16,46],zoom:Number(zoom.value)};
+  }
+  for(const view of asset.views){
+    const b=document.createElement('button');b.type='button';b.dataset.view=view.id;b.textContent=labels[view.id];b.setAttribute('aria-pressed',String(view.id===current));b.addEventListener('click',()=>{current=view.id;render()});document.getElementById('views').append(b);
+    const card=document.createElement('article');card.className='card';const title=document.createElement('h3');title.textContent=labels[view.id];card.append(title);
+    const row=document.createElement('div');row.className='samples';
+    for(const kind of ['native','zoomed']){const c=document.createElement('canvas');c.width=32;c.height=48;c.dataset.frame=view.id;c.dataset.kind=kind;c.className=kind==='native'?'native-frame':'zoomed checker';c.setAttribute('aria-label',labels[view.id]+(kind==='native'?' a tamaño de prueba':' ampliada tres veces'));row.append(c)}
+    card.append(row);const note=document.createElement('p');note.className='muted';note.textContent='32 × 48 px · ampliación 3×';card.append(note);document.getElementById('gallery').append(card);
+  }
+  zoom.addEventListener('change',render);
+  document.getElementById('background').addEventListener('change',e=>{const panel=document.getElementById('inspection');panel.classList.toggle('checker',e.target.value==='checker');panel.style.backgroundColor=e.target.value==='dark'?'#1f2933':'#fffdf8'});
+  function loadSource(source){
+    return new Promise((resolve,reject)=>{
+      const image=new Image();
+      image.onload=()=>{images.set(source.path,image);resolve()};
+      image.onerror=()=>reject(new Error('No se pudo cargar '+source.path));
+      image.src='../../'+source.path;
+    });
+  }
+  const sources=new Map([asset.source,...asset.views.map(sourceForView=>sourceForView.sourceOverride||asset.source),...asset.comparisons.map(comparison=>comparison.source)].map(source=>[source.path,source]));
+  Promise.all([...sources.values()].map(loadSource)).then(()=>{
+    ready=true;
+    document.querySelectorAll('[data-frame]').forEach(c=>drawFrame(c.getContext('2d'),c.dataset.frame));
+    const original=asset.comparisons.find(comparison=>comparison.id==='original');
+    const previous=asset.comparisons.find(comparison=>comparison.id==='previous');
+    drawFrame(document.getElementById('front-before').getContext('2d'),'front',0,0,1,original.source,original.sourceRect);
+    drawFrame(document.getElementById('front-previous').getContext('2d'),'front',0,0,1,previous.source,previous.sourceRect);
+    drawFrame(document.getElementById('front-after').getContext('2d'),'front');
+    render();
+  }).catch(()=>{
+    const e=document.getElementById('error');e.hidden=false;e.textContent='No se pudieron cargar las láminas. Conserva esta página en tools/art-preview/ y los PNG v01, v03 y v04 en art/concepts/avatars/ dentro de programation-world.';document.getElementById('status').textContent='Revisa las rutas de los archivos';
+  });
+  document.getElementById('asset-id').textContent=asset.assetId;
+</script>
+</body>
+</html>

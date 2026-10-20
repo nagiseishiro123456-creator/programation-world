@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "catalogId": "avatar-appearance-v01",
+  "avatarId": "avatar-base-01",
+  "reviewStatus": "jacket_colors_visual_approved_by_product_owner",
+  "date": "2026-10-19",
+  "scope": "Jacket hue only, on the approved silhouette and walking cycle. The three prototype colors are visually approved; full avatar catalog remains open.",
+  "source": {
+    "path": "art/exports/avatars/avatar-base-01-walk-v01.png",
+    "sha256": "9765a29f50f42a180725d6737650c0360b13c6cb73c8fb39b38ebe4bdb23a211",
+    "sourcePngUnmodified": true
+  },
+  "atlas": {
+    "width": 160,
+    "height": 192,
+    "frameWidth": 32,
+    "frameHeight": 48,
+    "anchor": {
+      "x": 16,
+      "y": 46
+    }
+  },
+  "mask": {
+    "minLocalY": 19,
+    "maxLocalY": 33,
+    "minGreenOverRed": 12,
+    "minGreenOverBlue": 6,
+    "minSaturation": 0.25,
+    "scope": "Specific to the green jacket in this atlas; not a generic clothing segmentation rule"
+  },
+  "defaults": {
+    "schemaVersion": 1,
+    "avatarId": "avatar-base-01",
+    "jacketId": "green"
+  },
+  "jackets": [
+    {
+      "id": "green",
+      "label": "Verde original",
+      "swatch": "#3D8552",
+      "hueDegrees": null
+    },
+    {
+      "id": "blue",
+      "label": "Azul",
+      "swatch": "#3D6185",
+      "hueDegrees": 210
+    },
+    {
+      "id": "terracotta",
+      "label": "Terracota",
+      "swatch": "#85533D",
+      "hueDegrees": 18
+    }
+  ],
+  "provenance": {
+    "method": "Runtime color transformation over the existing approved atlas; no newly generated image",
+    "paletteReference": "art/concepts/Z01/campus-avatar-v01.png",
+    "note": "Green, blue and terracotta families come from the accepted campus concept. The three runtime colors were visually accepted by the Product Owner on 2026-10-19. Hair and clothes shapes are unchanged in the runtime prototype."
+  },
+  "approval": {
+    "date": "2026-10-19",
+    "statement": "si me gustan avanzamos",
+    "scope": "Visual approval of green, blue and terracotta jacket colors; does not certify browser functional tests",
+    "browserFunctionalTestsApproved": false
+  }
+}

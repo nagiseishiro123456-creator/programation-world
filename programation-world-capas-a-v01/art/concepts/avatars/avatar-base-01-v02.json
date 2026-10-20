@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "assetId": "avatar-base-01",
+  "project": "programation-world",
+  "version": "0.2",
+  "reviewStatus": "front_eye_readability_fix_pending_product_owner_review",
+  "source": {
+    "path": "art/concepts/avatars/avatar-base-01-v01.png",
+    "size": [
+      2048,
+      768
+    ],
+    "mode": "RGBA",
+    "bytes": 1259401,
+    "sha256": "32efa0437a7f3599d8de9832f06a29e3da81adc4c0a149d9dcb1f30ae35ad8fe",
+    "alpha_min": 0,
+    "alpha_max": 254,
+    "fully_transparent_fraction": 0.7259915669759115
+  },
+  "frame": {
+    "width": 32,
+    "height": 48,
+    "anchor": {
+      "x": 16,
+      "y": 46
+    },
+    "sourceFrameWidth": 416,
+    "sourceFrameHeight": 624,
+    "downsampleFactor": 13
+  },
+  "views": [
+    {
+      "id": "front",
+      "sourceRect": {
+        "x": 66,
+        "y": 94,
+        "width": 416,
+        "height": 624
+      },
+      "visibleBounds": {
+        "x": 142,
+        "y": 128,
+        "width": 262,
+        "height": 564
+      },
+      "estimatedFootCenter": [
+        274.5,
+        692
+      ],
+      "sourceOverride": {
+        "path": "art/concepts/avatars/avatar-base-01-v02.png",
+        "size": [
+          2048,
+          768
+        ],
+        "mode": "RGBA",
+        "bytes": 1254732,
+        "sha256": "a062bbb067cfcb47fc983df9f1fb9e8947add6f33a530951fe4b356018e51179",
+        "alpha_min": 0,
+        "alpha_max": 254,
+        "fully_transparent_fraction": 0.7310358683268229,
+        "purpose": "Front view only; retain v01 for left, right and back",
+        "provenance": {
+          "method": "image_gen built-in, precise-object-edit",
+          "modelReported": null,
+          "transparentBackgroundRequested": true,
+          "editTarget": "art/concepts/avatars/avatar-base-01-v01.png",
+          "generatedOutputUnmodified": true,
+          "prompt": "Use case: precise-object-edit.\nEDIT TARGET: the attached 2048 x 768 transparent four-view avatar sheet. Make a visibly stronger, localized EYE READABILITY revision. Keep all four character silhouettes, coordinates, poses, baseline, hairstyle, clothing, backpack, palette and pixel-art style. Do not redraw the body.\nONLY edit the TWO FRONT EYES on the FIRST FIGURE on the left. Each currently appears like a tall nearly black block next to an excessively thin white stripe. Replace them with simple WHITE RECTANGULAR EYES WITH A SINGLE NARROW DARK VERTICAL PUPIL, WHITE visibly dominating each eye. Both front eye openings should now be about 36 source pixels wide and 32 source pixels tall. Each white portion must be a solid strip at least 26 source pixels wide, and each dark pupil only about 10 pixels wide. Keep dark pixels immediately beside the white so they read as eyes, not blank white eyes. LEFT FRONT EYE: white on viewer-left and dark pupil on viewer-right. RIGHT FRONT EYE: dark pupil on viewer-left and white on viewer-right. Make the two white strips equally wide, clearly wider than in the reference. At 32 x 48 output this must read as TWO white pixels next to ONE dark pixel in BOTH eyes. Maintain forward gaze, neutral expression and existing eye height.\nApproximate source pixel guidance to make this concrete: left eye opening around x216..255,y285..319, white x216..242 and dark x243..255; right eye opening x298..337,y285..319, dark x298..310 and white x311..337. These are intended tiny local adjustments to the face; preserve the hair and cheek outline. Pixels elsewhere in the sheet should be unchanged. Do not change the other three views at all. Actual alpha transparency, no text, no background, no extra figures or objects."
+        }
+      }
+    },
+    {
+      "id": "left",
+      "sourceRect": {
+        "x": 544,
+        "y": 94,
+        "width": 416,
+        "height": 624
+      },
+      "visibleBounds": {
+        "x": 629,
+        "y": 133,
+        "width": 264,
+        "height": 559
+      },
+      "estimatedFootCenter": [
+        752,
+        692
+      ]
+    },
+    {
+      "id": "right",
+      "sourceRect": {
+        "x": 1088,
+        "y": 94,
+        "width": 416,
+        "height": 624
+      },
+      "visibleBounds": {
+        "x": 1156,
+        "y": 133,
+        "width": 264,
+        "height": 559
+      },
+      "estimatedFootCenter": [
+        1296,
+        692
+      ]
+    },
+    {
+      "id": "back",
+      "sourceRect": {
+        "x": 1561,
+        "y": 94,
+        "width": 416,
+        "height": 624
+      },
+      "visibleBounds": {
+        "x": 1640,
+        "y": 133,
+        "width": 263,
+        "height": 559
+      },
+      "estimatedFootCenter": [
+        1769,
+        692
+      ]
+    }
+  ],
+  "animation": {
+    "state": "idle",
+    "walkingFramesProduced": false
+  },
+  "production": {
+    "native32x48PngExported": false,
+    "layersSeparated": false,
+    "engineIntegrationTested": false
+  },
+  "provenance": {
+    "method": "image_gen built-in, identity-preserve",
+    "modelReported": null,
+    "transparentBackgroundRequested": true,
+    "sourceReference": "art/concepts/Z01/campus-avatar-v01.png",
+    "prompt": "Use case: identity-preserve.\nAsset type: four-direction idle character turnaround on a genuinely transparent PNG background for the educational pixel-art game programation-world.\n\nEDIT TARGET: use the attached approved campus concept solely to extract and preserve the identity of the LEFTMOST avatar labeled BASE: short tousled brown hair, the same warm skin tone and youthful face, muted green padded jacket over gray shirt, navy trousers, brown ankle boots and a compact gray backpack. Ignore the blue and terracotta variants and ignore all scenery.\n\nCreate exactly FOUR full-body appearances of that SAME anonymous base avatar in a single horizontal row, in this LEFT-TO-RIGHT ORDER: (1) FRONT facing the viewer; (2) LEFT PROFILE facing screen-left; (3) RIGHT PROFILE facing screen-right; (4) BACK with face completely hidden and the same gray backpack clearly visible. Idle neutral pose only, arms relaxed. Identical head size, height, jacket length, clothes, shoes, skin and palette in all four views. Perspective must match a classic top-down 2D RPG with visible face and a little top of the head, rather than a realistic human turnaround. Side views must show the body actually facing the stated side, not merely the head turned. Keep details and character silhouette coherent with the approved BASE avatar.\n\nLayout: wide transparent sheet, ideally 2048 by 768 pixels, divided conceptually into four equal cells, one centered character per cell, generous transparent gaps between figures, all boots aligned on the same baseline. No figure may touch the outside edge or neighboring cell. Think of each character as designed for a 32 by 48 logical-pixel frame, enlarged consistently for inspection. Make the pixel art clear and readable at this small target size: crisp dark outlines, simple controlled shading, readable green jacket, visible backpack straps, no unnecessary tiny decoration.\n\nOutput ONLY the four character views with actual alpha transparency around and between them. No labels, numerals, text, frame borders, arrows, backgrounds, floor, shadows, buildings, logos, watermarks, stat panels or extra characters. Do not include the BASE/A/B labels from the source. Do not change the character or assign a personal name. This sheet is an art-source study; exact source geometry will be inspected afterward.",
+    "sourcePngUnmodified": true
+  },
+  "alphaAnalysisNote": "Bounds estimated using alpha > 32; low-opacity residual pixels outside those bounds are preserved in the original source.",
+  "revision": {
+    "request": "Make the white part of both front eyes readable at the small preview size",
+    "frontUsesGeneratedRevision": true,
+    "otherViewsUseOriginalSource": true,
+    "previousManifest": "art/concepts/avatars/avatar-base-01-v01.json",
+    "note": "The generated front view retains the character design but is not byte-identical outside the eyes; original side and back views remain the active source for those directions."
+  }
+}

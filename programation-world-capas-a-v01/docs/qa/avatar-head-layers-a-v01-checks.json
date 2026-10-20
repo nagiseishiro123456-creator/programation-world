@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "date": "2026-10-20",
+  "checks": [
+    "Syntax, manifest snapshot and all source/export hashes",
+    "Native layer bounds leave the body and feet untouched",
+    "120 compositions: original identity, exact eyes, stable body and consistent walking heads",
+    "Layer toggles do not restore the old hairstyle and preserve the body"
+  ],
+  "testedFrames": 120,
+  "eyePixelsExactlyPreserved": true,
+  "bodyUnchangedFromRow": 22,
+  "conceptsApproved": [
+    "original",
+    "A",
+    "B"
+  ],
+  "nativeStyleBProduced": false,
+  "nativeAVisualApproval": "pending_product_owner_review",
+  "browserExecuted": false,
+  "manualChecksPending": [
+    "Direction, jacket and layer controls in browser",
+    "Idle, playback and manual frame stepping in browser",
+    "Native A face/hair seams, collar and backpack at real scale",
+    "Desktop layouts and keyboard focus"
+  ]
+}

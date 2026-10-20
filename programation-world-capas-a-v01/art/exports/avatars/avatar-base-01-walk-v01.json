@@ -1,0 +1,281 @@
+{
+  "assetId": "avatar-base-01",
+  "animationId": "avatar-base-01-walk",
+  "version": "0.1",
+  "image": "avatar-base-01-walk-v01.png",
+  "size": [
+    160,
+    192
+  ],
+  "frame": {
+    "width": 32,
+    "height": 48,
+    "anchor": {
+      "x": 16,
+      "y": 46
+    }
+  },
+  "headBandReusedFromApprovedIdle": 22,
+  "frames": [
+    {
+      "id": "front-idle",
+      "direction": "front",
+      "state": "idle",
+      "poseIndex": null,
+      "cycleIndex": null,
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 32,
+        "height": 48
+      }
+    },
+    {
+      "id": "front-walk-1",
+      "direction": "front",
+      "state": "walk",
+      "poseIndex": 0,
+      "cycleIndex": 0,
+      "frame": {
+        "x": 32,
+        "y": 0,
+        "width": 32,
+        "height": 48
+      }
+    },
+    {
+      "id": "front-walk-3",
+      "direction": "front",
+      "state": "walk",
+      "poseIndex": 2,
+      "cycleIndex": 1,
+      "frame": {
+        "x": 64,
+        "y": 0,
+        "width": 32,
+        "height": 48
+      }
+    },
+    {
+      "id": "front-walk-2",
+      "direction": "front",
+      "state": "walk",
+      "poseIndex": 1,
+      "cycleIndex": 2,
+      "frame": {
+        "x": 96,
+        "y": 0,
+        "width": 32,
+        "height": 48
+      }
+    },
+    {
+      "id": "front-walk-4",
+      "direction": "front",
+      "state": "walk",
+      "poseIndex": 3,
+      "cycleIndex": 3,
+      "frame": {
+        "x": 128,
+        "y": 0,
+        "width": 32,
+        "height": 48
+      }
+    },
+    {
+      "id": "left-idle",
+      "direction": "left",
+      "state": "idle",
+      "poseIndex": null,
+      "cycleIndex": null,
+      "frame": {
+        "x": 0,
+        "y": 48,
+        "width": 32,
+        "height": 48
+      }
+    },
+    {
+      "id": "left-walk-1",
+      "direction": "left",
+      "state": "walk",
+      "poseIndex": 0,
+      "cycleIndex": 0,
+      "frame": {
+        "x": 32,
+        "y": 48,
+        "width": 32,
+        "height": 48
+      }
+    },
+    {
+      "id": "left-walk-2",
+      "direction": "left",
+      "state": "walk",
+      "poseIndex": 1,
+      "cycleIndex": 1,
+      "frame": {
+        "x": 64,
+        "y": 48,
+        "width": 32,
+        "height": 48
+      }
+    },
+    {
+      "id": "left-walk-3",
+      "direction": "left",
+      "state": "walk",
+      "poseIndex": 2,
+      "cycleIndex": 2,
+      "frame": {
+        "x": 96,
+        "y": 48,
+        "width": 32,
+        "height": 48
+      }
+    },
+    {
+      "id": "left-walk-4",
+      "direction": "left",
+      "state": "walk",
+      "poseIndex": 3,
+      "cycleIndex": 3,
+      "frame": {
+        "x": 128,
+        "y": 48,
+        "width": 32,
+        "height": 48
+      }
+    },
+    {
+      "id": "right-idle",
+      "direction": "right",
+      "state": "idle",
+      "poseIndex": null,
+      "cycleIndex": null,
+      "frame": {
+        "x": 0,
+        "y": 96,
+        "width": 32,
+        "height": 48
+      }
+    },
+    {
+      "id": "right-walk-1",
+      "direction": "right",
+      "state": "walk",
+      "poseIndex": 0,
+      "cycleIndex": 0,
+      "frame": {
+        "x": 32,
+        "y": 96,
+        "width": 32,
+        "height": 48
+      }
+    },
+    {
+      "id": "right-walk-2",
+      "direction": "right",
+      "state": "walk",
+      "poseIndex": 1,
+      "cycleIndex": 1,
+      "frame": {
+        "x": 64,
+        "y": 96,
+        "width": 32,
+        "height": 48
+      }
+    },
+    {
+      "id": "right-walk-3",
+      "direction": "right",
+      "state": "walk",
+      "poseIndex": 2,
+      "cycleIndex": 2,
+      "frame": {
+        "x": 96,
+        "y": 96,
+        "width": 32,
+        "height": 48
+      }
+    },
+    {
+      "id": "right-walk-4",
+      "direction": "right",
+      "state": "walk",
+      "poseIndex": 3,
+      "cycleIndex": 3,
+      "frame": {
+        "x": 128,
+        "y": 96,
+        "width": 32,
+        "height": 48
+      }
+    },
+    {
+      "id": "back-idle",
+      "direction": "back",
+      "state": "idle",
+      "poseIndex": null,
+      "cycleIndex": null,
+      "frame": {
+        "x": 0,
+        "y": 144,
+        "width": 32,
+        "height": 48
+      }
+    },
+    {
+      "id": "back-walk-1",
+      "direction": "back",
+      "state": "walk",
+      "poseIndex": 0,
+      "cycleIndex": 0,
+      "frame": {
+        "x": 32,
+        "y": 144,
+        "width": 32,
+        "height": 48
+      }
+    },
+    {
+      "id": "back-walk-2",
+      "direction": "back",
+      "state": "walk",
+      "poseIndex": 1,
+      "cycleIndex": 1,
+      "frame": {
+        "x": 64,
+        "y": 144,
+        "width": 32,
+        "height": 48
+      }
+    },
+    {
+      "id": "back-walk-3",
+      "direction": "back",
+      "state": "walk",
+      "poseIndex": 2,
+      "cycleIndex": 2,
+      "frame": {
+        "x": 96,
+        "y": 144,
+        "width": 32,
+        "height": 48
+      }
+    },
+    {
+      "id": "back-walk-4",
+      "direction": "back",
+      "state": "walk",
+      "poseIndex": 3,
+      "cycleIndex": 3,
+      "frame": {
+        "x": 128,
+        "y": 144,
+        "width": 32,
+        "height": 48
+      }
+    }
+  ]
+}

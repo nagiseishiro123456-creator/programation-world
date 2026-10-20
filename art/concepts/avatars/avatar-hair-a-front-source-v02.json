@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "assetId": "avatar-hair-a-front-source-v02",
+  "date": "2026-10-20",
+  "reviewStatus": "pending_product_owner_review",
+  "request": "la verdad me gustaria un poco mas de detalle y que sea mas parecido, el A de frende que este mucho mas chevere y definido",
+  "method": "image_gen built-in",
+  "modelReported": null,
+  "transparentBackgroundRequested": true,
+  "sourcePngUnmodified": true,
+  "prompt": "Use case: precise-object-edit.\nAsset type: transparent production source for the FRONT HAIR LAYER of approved hairstyle A, a short chestnut side-part, for a 32x48 pixel-art RPG avatar.\nInputs: Image 1 is the user's precise visual reference: preserve the haircut identity of its FRONT character, with a lifted crown tuft, broad diagonally swept fringe and sculpted warm-brown clumps. Image 2 is the existing native four-direction hair strip: edit ONLY the identity of its FIRST (front) wig; the other three are context and are NOT requested outputs. Image 3 is the approved concept board: use only the FRONT character in ROW A, ignore all of B.\nPrimary request: make A's front significantly sharper, more attractive and much closer to the reference, with a clearly defined SIDE PART and readable locks. The current production looks like a soft middle-parted helmet; replace that with a confident asymmetric swept fringe and crisp clump separation.\nOutput ONE front-facing HAIR-ONLY piece, centered on true transparency in a square PNG. No head or face. Hair is approximately 65% of canvas width and 50% of its height with generous transparent margins. Keep the face opening transparent; the silhouette is a compact cap, raised crown tuft, two small sideburns.\nStyle: deliberate low-resolution pixel clusters, as if the hair silhouette occupies just 22 logical pixels wide and 16 high, shown at a large exact integer zoom. Use single-logical-pixel dark outlines and blocky staircase edges. Organize detail into 3-4 LARGE diagonal clumps, clear deep brown separation, chestnut midtones and restrained warm highlights on the upper-facing planes. The main swept fringe goes across the viewer-left forehead; its pointed tip stops above the eye opening, with the part slightly right of center. Add small, intentional tufts on the crown and outer sides, matching the reference's character. Strong clean silhouette and a 5-6 tone palette; no noisy tiny stippling.\nConstraints: strictly frontal, symmetric camera, no perspective rotation; preserve chestnut identity and proportions of reference A. Hair only: NO SKIN, ears, eyes, neck, clothes, body or face, including no peach pixels tucked into the hair. Lower central face and all surroundings must be genuine alpha transparency. This will be composited over the exact approved eyes and body in code. Do not draw or replace them.\nAvoid: rounded flat helmet, center-split curtain fringe, photorealism, smooth painting, blurry strands, antialias fringe, gradients, drop shadow, glows, outlines around the transparent face opening that resemble a face, white matte, checkerboard pattern, text, labels, extra hairstyles or directions.",
+  "references": [
+    {
+      "path": "art/references/reviews/hair-a-front-reference-v02.png",
+      "role": "User visual reference; uploaded as image(8).png",
+      "sha256": "872fcfdb044bf704db57c30ad920ddd525bbd09bacf59b92026fe89c70c36a48"
+    },
+    {
+      "path": "art/exports/avatars/avatar-hair-sidepart-v01.png",
+      "role": "Previous native production; first/front piece is edit target",
+      "sha256": "df1464dd6c986b7d401fb5a617ecc9fcf8a6148adcbd715a0c191dec2faae223"
+    },
+    {
+      "path": "art/concepts/avatars/avatar-hair-options-v01.png",
+      "role": "Approved concept board; row A front only",
+      "sha256": "11ddaaddfacea3f6094c2842ac5c0faea694bf487a3aa0d94ffa18de4588435d"
+    }
+  ],
+  "sourcePath": "art/concepts/avatars/avatar-hair-a-front-source-v02.png",
+  "scope": "Front hair only. Original, A side/back, neutral head, approved eyes and body retained.",
+  "nativeDestination": {
+    "x": 5,
+    "y": 3,
+    "width": 22,
+    "height": 16
+  },
+  "sourceRect": {
+    "x": 247,
+    "y": 368,
+    "width": 775,
+    "height": 557
+  },
+  "sha256": "23103aa7d773bc1a8b2407c6c5587837221c63c7337747073e123df77f093c67",
+  "size": [
+    1254,
+    1254
+  ]
+}

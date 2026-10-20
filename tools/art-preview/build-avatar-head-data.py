@@ -8,7 +8,7 @@ from pathlib import Path
 
 DIRECTORY = Path(__file__).resolve().parent
 ROOT = DIRECTORY.parents[1]
-MANIFEST = ROOT / 'art/exports/avatars/avatar-head-layers-a-v01.json'
+MANIFEST = ROOT / 'art/exports/avatars/avatar-head-layers-a-v02.json'
 OUTPUT = DIRECTORY / 'avatar-head-data.js'
 decode_png = runpy.run_path(str(DIRECTORY / 'build-avatar-appearance-data.py'))['decode_png']
 
@@ -26,7 +26,7 @@ def build():
         layers[name] = {'encoding': 'rgba8-base64', 'width': width, 'height': height,
                         'sha256Rgba': hashlib.sha256(pixels).hexdigest(),
                         'pixelsBase64': base64.b64encode(pixels).decode('ascii')}
-    return 'window.AVATAR_HEAD_DATA = ' + json.dumps({'manifest': manifest, 'layers': layers}, ensure_ascii=False, indent=2) + ';\n'
+    return 'window.AVATAR_HEAD_DATA = ' + json.dumps({'manifestPath': MANIFEST.relative_to(ROOT).as_posix(), 'manifest': manifest, 'layers': layers}, ensure_ascii=False, indent=2) + ';\n'
 
 
 if __name__ == '__main__':

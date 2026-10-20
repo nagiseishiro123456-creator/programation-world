@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "date": "2026-10-20",
+  "renderedFrames": 30,
+  "scope": "Front A v01/v02, three colors, idle plus four walking poses",
+  "comparison": "Both original body and composed frame use the same Canvas put/getImageData round-trip",
+  "eyePatchesEqualAfterCanvas": true,
+  "bodyRows22Through47EqualAfterCanvas": true,
+  "browserExecuted": false,
+  "referenceRenderer": "@napi-rs/canvas 0.1.100",
+  "nativePngCodec": "pngjs 7.0.0"
+}

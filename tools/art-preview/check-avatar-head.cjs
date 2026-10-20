@@ -10,12 +10,27 @@ const source = ac.decodeSource(appearance.source, decode), neutral = ac.decodeSo
 const hash = value => crypto.createHash('sha256').update(value).digest('hex');
 function check(name, fn) { fn(); checks.push(name); }
 check('Syntax, manifest snapshot and all source/export hashes', () => {
-  for (const name of ['avatar-head-core.js', 'avatar-head-lab.js', 'avatar-head-data.js', 'export-avatar-head-layers.cjs']) new vm.Script(fs.readFileSync(path.join(__dirname, name), 'utf8'));
-  assert.equal(JSON.stringify(manifest), JSON.stringify(JSON.parse(fs.readFileSync(path.join(root, 'art/exports/avatars/avatar-head-layers-a-v01.json')))));
+  for (const name of ['avatar-head-core.js', 'avatar-head-lab.js', 'avatar-head-data.js', 'export-avatar-head-layers.cjs', 'export-avatar-front-v02.cjs']) new vm.Script(fs.readFileSync(path.join(__dirname, name), 'utf8'));
+  const manifestPath = data.manifestPath || 'art/exports/avatars/avatar-head-layers-a-v01.json';
+  assert.equal(JSON.stringify(manifest), JSON.stringify(JSON.parse(fs.readFileSync(path.join(root, manifestPath)))));
   for (const step of manifest.provenance.steps) assert.equal(hash(fs.readFileSync(path.join(root, step.sourcePath))), step.sha256);
   assert.equal(hash(fs.readFileSync(path.join(root, manifest.exports.neutral))), manifest.exportHashes.neutral);
   assert.equal(hash(fs.readFileSync(path.join(root, manifest.exports.hairA))), manifest.exportHashes.hair);
   assert.equal(hash(neutral), data.layers.neutral.sha256Rgba); assert.equal(hash(hair), data.layers.hair.sha256Rgba);
+});
+check('Front revision keeps neutral head and left/right/back hair byte-identical', () => {
+  assert.equal(manifest.version, '0.2');
+  assert.equal(manifest.revision.changedDirection, 'front');
+  const previous = JSON.parse(fs.readFileSync(path.join(root, manifest.revision.previousManifest), 'utf8'));
+  assert.equal(manifest.exports.neutral, previous.exports.neutral);
+  assert.equal(manifest.exportHashes.neutral, previous.exportHashes.neutral);
+  assert.equal(hash(fs.readFileSync(path.join(root, manifest.revision.previousHairExport))), manifest.revision.previousHairPngSha256);
+  for (const view of manifest.views) {
+    const pixels = hc.region(hair, 128, { x: view.column * 32, y: 0, width: 32, height: 48 });
+    const actual = hash(pixels), baseline = manifest.revision.baselineViewRgbaHashes[view.id];
+    if (view.id === 'front') assert.notEqual(actual, baseline, 'Front hair must change');
+    else assert.equal(actual, baseline, view.id + ': protected hair pixels');
+  }
 });
 check('Native layer bounds leave the body and feet untouched', () => {
   assert.deepEqual(JSON.parse(JSON.stringify(manifest.frame)), { width: 32, height: 48, anchor: { x: 16, y: 46 } });
@@ -66,4 +81,4 @@ check('Layer toggles do not restore the old hairstyle and preserve the body', ()
   }
   assert.throws(() => hc.composeFrame(original, n, h, view, manifest, { style: 'b' }));
 });
-console.log(JSON.stringify({ passed: true, date: '2026-10-20', checks, testedFrames, eyePixelsExactlyPreserved: true, bodyUnchangedFromRow: 22, conceptsApproved: ['original', 'A', 'B'], nativeStyleBProduced: false, nativeAVisualApproval: 'pending_product_owner_review', browserExecuted: false, manualChecksPending: ['Direction, jacket and layer controls in browser', 'Idle, playback and manual frame stepping in browser', 'Native A face/hair seams, collar and backpack at real scale', 'Desktop layouts and keyboard focus'] }, null, 2));
+console.log(JSON.stringify({ passed: true, date: '2026-10-20', layerVersion: manifest.version, changedDirection: manifest.revision.changedDirection, checks, testedFrames, eyePixelsExactlyPreserved: true, bodyUnchangedFromRow: 22, otherHairViewsByteIdentical: true, conceptsApproved: ['original', 'A', 'B'], nativeStyleBProduced: false, nativeAVisualApproval: 'pending_product_owner_review', browserExecuted: false, manualChecksPending: ['Direction, jacket and layer controls in browser', 'Idle, playback and manual frame stepping in browser', 'Native A face/hair seams, collar and backpack at real scale', 'Desktop layouts and keyboard focus'] }, null, 2));

@@ -1,7 +1,7 @@
 # Primeros peinados — propuesta v01
 
 - Proyecto: programation-world. Historia: S0-03, arte y personalización.
-- Fecha: 2026-10-19. Actualización: 2026-10-20. Versión: 0.2.
+- Fecha: 2026-10-19. Actualización: 2026-10-20. Versión: 0.3.
 - Estado: original, A y B aprobados como conceptos; primera producción nativa de A preparada para revisión.
 - Antecedentes aprobados: reposo v04, marcha v01 y tres colores de abrigo.
 
@@ -72,6 +72,8 @@ El archivo de apariencia actual conserva schemaVersion 1 y sus propiedades schem
 La lámina se creó con image_gen integrado, usando v04 como referencia de identidad y v01 para perfiles y espalda. El modelo concreto no fue informado. La imagen se conserva completa en art/concepts/avatars/avatar-hair-options-v01.png y el prompt exacto está en el JSON contiguo. Las fuentes anteriores no se sobrescribieron.
 
 No se introducen marcas, nombres institucionales ni identidades reales. La revisión de procedencia y licencias de las referencias originales conserva los pendientes ya registrados; esta propuesta no los resuelve ni declara derechos de terceros autorizados.
+
+La [revisión frontal de A v02](avatar-front-review-v02.md) mejora mechones y contraste a petición del Product Owner, conservando ojos, cuerpo y las otras tres vistas. Su aceptación visual sigue pendiente.
 
 ## 7. Scrum y trabajo local
 

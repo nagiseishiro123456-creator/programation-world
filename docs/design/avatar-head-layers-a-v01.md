@@ -5,6 +5,8 @@
 - Estado: composición nativa de A preparada para revisión; verificaciones de píxeles y controlador superadas. Pruebas en navegador pendientes.
 - Conceptos aprobados: original, A y B, mediante «si, esos estilos estan buenos, conservamos a y b y tambien el original, y seguimos» el 2026-10-19.
 
+La [revisión frontal v02](avatar-front-review-v02.md) continúa esta producción a petición del Product Owner. Este documento conserva el registro de v01; el laboratorio activo muestra v02.
+
 ## 1. Entregable de este paso
 
 Se prepararon una cabeza auxiliar sin cabello y el cabello A como recursos separados, en las cuatro direcciones. El visor compara la base original con A, permite ver reposo y marcha, cambiar entre los tres colores de abrigo e inspeccionar las capas por separado.

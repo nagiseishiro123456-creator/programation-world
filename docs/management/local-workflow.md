@@ -54,7 +54,7 @@ Sustituir las rutas y el nombre de rama por los de la tarea. La identidad y aute
 
 ## Estado y siguiente paso
 
-El campus, el reposo v04, la marcha v01, los tres colores y los conceptos original/A/B están aprobados visualmente. A tiene capas nativas y un laboratorio de comparación; B permanece pendiente de producción.
+El campus, el reposo v04, la marcha v01, los tres colores y los conceptos original/A/B están aprobados visualmente. A tiene capas nativas y un laboratorio de comparación. La [revisión frontal v02](../design/avatar-front-review-v02.md) está preparada para comprobar el detalle solicitado; B permanece pendiente de producción.
 
 Abrir [avatar-head-lab.html](../../tools/art-preview/avatar-head-lab.html) desde la copia local para revisar A, registrando navegador, versión, resolución y observaciones. La aprobación del concepto no sustituye la revisión de esta composición nativa.
 

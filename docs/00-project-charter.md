@@ -1,6 +1,6 @@
 # Project Charter — Videojuego educativo ambientado en Juliaca
 
-- Versión: 0.7.
+- Versión: 0.8.
 - Fecha inicial: 2026-10-19. Actualización: 2026-10-20.
 - Etapa: Sprint 0 — preproducción.
 - Estado: redactado para revisión del Product Owner; no equivale al cierre del sprint.
@@ -152,7 +152,7 @@ La revisión legal de este paquete es preliminar; no constituye autorización de
 
 El proyecto se conserva en GitHub y permite trabajar con una copia local. Reúne documentación, referencias, arte y herramientas de avatar; el cliente Phaser, el mapa, el aprendizaje y el servidor del mundo compartido todavía no están implementados.
 
-La revisión inicial de imágenes, la guía visual y las aceptaciones del campus, el reposo y la marcha están documentadas. Los tres colores iniciales del abrigo fueron aceptados. Original, A y B fueron aceptados como conceptos. El siguiente paso es revisar la primera composición nativa por capas de A y después extender la producción a B, antes de integrar el selector completo de cabello. Después se precisarán el recorrido educativo de Z01 y las reglas de las entrevistas. El Product Owner autorizó al asistente a incorporar avances y documentación en GitHub el 2026-10-20. Se conservan el historial y la revisión paso a paso. La guía vigente está en [local-workflow.md](management/local-workflow.md).
+La revisión inicial de imágenes, la guía visual y las aceptaciones del campus, el reposo y la marcha están documentadas. Los tres colores iniciales del abrigo fueron aceptados. Original, A y B fueron aceptados como conceptos. El siguiente paso es revisar el [frente refinado de A v02](design/avatar-front-review-v02.md), solicitado después de la primera composición, y después extender la producción a B, antes de integrar el selector completo de cabello. Después se precisarán el recorrido educativo de Z01 y las reglas de las entrevistas. El Product Owner autorizó al asistente a incorporar avances y documentación en GitHub el 2026-10-20. Se conservan el historial y la revisión paso a paso. La guía vigente está en [local-workflow.md](management/local-workflow.md).
 
 Quedan por concretar: nombre comercial del juego, días disponibles, experiencia técnica actual, ubicación de Z01, catálogo completo de personalización, versiones y configuración del cliente, infraestructura persistente, licencia del proyecto y alcance de la apertura pública. La carpeta local se llama programation-world. La procedencia detallada y las condiciones de uso de las referencias deberán revisarse antes de incorporarlas como recursos publicables.
 

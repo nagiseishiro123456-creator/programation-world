@@ -1,0 +1,22 @@
+# Dependencies and build output
+node_modules/
+dist/
+coverage/
+*.log
+
+# Python authoring tools
+__pycache__/
+*.py[cod]
+.venv/
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Delivery archives and operating-system files
+*.zip
+.DS_Store
+Thumbs.db

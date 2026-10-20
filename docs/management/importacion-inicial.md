@@ -3,57 +3,51 @@
 - Proyecto: programation-world.
 - Fecha: 2026-10-20.
 - Repositorio: https://github.com/nagiseishiro123456-creator/programation-world.
-- Estado: registro inicial incorporado; importación del código, las imágenes y la documentación completa pendiente.
+- Carga del usuario: [08071eb](https://github.com/nagiseishiro123456-creator/programation-world/commit/08071ebd869dddef62856ec791210ca5d688799f).
+- Estado: archivos recibidos; integración de las carpetas en la raíz y verificaciones documentadas en esta revisión.
 
-## Flujo de trabajo autorizado
+## Autorización vigente
 
-El Product Owner autorizó subir los avances a este repositorio para conservar el proyecto y evitar intercambiar un ZIP en cada entrega. El asistente puede preparar commits y actualizar el repositorio dentro del alcance acordado. Se mantiene el trabajo paso a paso, con decisiones de diseño revisadas por el Product Owner y documentación por tarea.
+El Product Owner autorizó al asistente a incorporar avances, documentación e imágenes a GitHub para conservar el proyecto y evitar ZIP en cada entrega. Sustituye la restricción anterior que reservaba los commits y push al desarrollador. Se mantienen el historial, el alcance acordado y la aceptación paso a paso de nuevas decisiones de diseño.
 
-Los cambios deberán conservar el historial existente y registrar qué se modificó, qué se comprobó y qué permanece pendiente. La importación inicial deberá revisar las diferencias con los archivos remotos y comprobar el contenido después de subirlo.
+La guía actual está en [local-workflow.md](local-workflow.md).
 
-## Visión y decisiones vigentes
+## Carga e integración
 
-Videojuego educativo 2D de mundo abierto inspirado en Juliaca, para navegador de escritorio. El recorrido conecta aprendizaje desde cero, formación en institutos y universidades, graduación, entrevistas y trabajo en tecnología.
+La carga web contenía 93 archivos dentro de programation-world-capas-a-v01/. En la raíz permanecían el README inicial y este registro. Las reglas de Git y las plantillas citadas por la documentación no estaban presentes.
 
-- Phaser y TypeScript aceptados para el futuro cliente; Python como primer lenguaje educativo.
-- Desarrollo por zonas; primera zona identificada como Z01.
-- Entrevistas con conversación y retos técnicos; combate descartado.
-- Avatar personalizable y funciones multijugador con texto como requisitos.
-- Voz por proximidad y adaptación a celulares para etapas posteriores.
-- Sprint 0 continúa abierto.
+Se integran art/, tools/, docs/, README.md y CONTRIBUTING.md en la raíz. Los 36 archivos binarios de la carga se reutilizan mediante sus mismos objetos Git; las imágenes y el video conservan sus bytes. El README inicial permanece recuperable en el historial.
 
-## Último estado preparado en local
+Se añaden reglas de Git y plantillas nuevas, documentando que no se recuperaron sus bytes del ZIP. También se incorpora un verificador de integridad y automatización para los controles del avatar. Los dos generadores Python pasan a declarar UTF-8 explícitamente para su uso en Windows.
 
-| Entregable | Estado registrado |
-| --- | --- |
-| Dirección visual y muestra del campus | Aprobadas visualmente. |
-| Reposo del avatar v04 | Aprobado visualmente. |
-| Marcha v01 en cuatro direcciones | Aprobada visualmente. |
-| Abrigo verde, azul y terracota | Aprobados visualmente. |
-| Peinados original, A y B | Conceptos aprobados por el Product Owner. |
-| Primera producción nativa de A | Cabeza auxiliar y cabello separados; visor de comparación preparado. |
-| Verificación de composición | 120 composiciones de control superadas en el entorno local anterior. |
-| Navegador real | Comprobaciones pendientes. |
-| Producción nativa de B | Pendiente. |
-| Cliente Phaser, mapa educativo y servidor compartido | Pendientes de implementación. |
+## Referencia del paquete anterior
 
-La aprobación de un concepto visual y la verificación de píxeles son comprobaciones distintas. La primera composición nativa de A todavía requiere revisión de su aspecto y controles en un navegador.
+Los siguientes datos se comprobaron en el entorno local anterior, antes de la carga web:
 
-## Paquete local verificado antes de la importación
-
-- Nombre: programation-world-capas-a-v01.zip.
-- Archivos del proyecto: 97.
-- Tamaño del ZIP: 22 234 464 bytes.
+- Archivo: programation-world-capas-a-v01.zip.
+- Archivos: 97.
+- Tamaño: 22 234 464 bytes.
 - SHA-256: `e2c4e5720db4750b2216ab16a262dbf3648c4480ea88a9fb6113de7c4e3f57b7`.
 
-Estos datos identifican el último paquete preparado. El ZIP, sus fuentes y sus imágenes aún no están incorporados a este repositorio mediante este registro.
+Esta revisión usa los archivos publicados en GitHub; no repite la lectura del ZIP, porque el entorno local continúa inactivo. El inventario remoto y la reutilización de objetos Git permiten comprobar la integración sin volver a descargar los binarios.
 
-## Pendientes de la importación
+## Estado del producto
 
-1. Recuperar el acceso al entorno que contiene los archivos locales.
-2. Revisar el paquete y las condiciones de uso de los recursos que se incorporarán a la versión pública.
-3. Subir las fuentes, documentación e imágenes verificadas, conservando los archivos remotos que corresponda.
-4. Comprobar el árbol del repositorio, los enlaces y la coincidencia de los archivos importados.
-5. Actualizar este registro con el commit de importación y los pendientes efectivos.
+| Entregable | Estado |
+| --- | --- |
+| Dirección de arte, campus, reposo v04 y marcha v01 | Aprobados visualmente. |
+| Abrigo verde, azul y terracota | Aprobados visualmente. |
+| Original, A y B | Conceptos aprobados. |
+| Composición nativa de A | Cabeza y cabello separados; pendiente de revisión visual y navegador real. |
+| Verificaciones de esta revisión | Sintaxis, snapshots, 120 composiciones y controlador comprobados en V8. |
+| Controles completos en Node y Python | Automatizados en GitHub Actions; consultar el resultado de la revisión correspondiente. |
+| Capas nativas de B | Pendientes. |
+| Cliente Phaser, mapa, formación, cuentas, servidor y chat | Pendientes de implementación. |
 
-La licencia del proyecto y la procedencia detallada de las referencias iniciales conservan los pendientes documentados durante la preproducción.
+Ver [auditoría](../qa/github-import-review-v01.md) y [resultado de la revisión](../qa/github-import-checks-v01.json). Los registros de QA anteriores conservan su contexto; no se presentan como ejecuciones nuevas.
+
+## Próximo paso
+
+Revisar A a tamaño nativo y en marcha. Registrar navegador, resolución, controles y aceptación o ajustes concretos. Después se producirán B y el selector con guardado de cabello. Sprint 0 permanece abierto.
+
+La licencia del proyecto y la procedencia detallada de las referencias iniciales mantienen sus pendientes documentados.

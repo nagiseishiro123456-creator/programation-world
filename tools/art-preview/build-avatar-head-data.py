@@ -14,7 +14,7 @@ decode_png = runpy.run_path(str(DIRECTORY / 'build-avatar-appearance-data.py'))[
 
 
 def build():
-    manifest = json.loads(MANIFEST.read_text())
+    manifest = json.loads(MANIFEST.read_text(encoding='utf-8'))
     layers = {}
     for name, key in [('neutral', 'neutral'), ('hair', 'hairA')]:
         raw = (ROOT / manifest['exports'][key]).read_bytes()
@@ -35,9 +35,9 @@ if __name__ == '__main__':
     args = parser.parse_args()
     content = build()
     if args.check:
-        if OUTPUT.read_text() != content:
+        if OUTPUT.read_text(encoding='utf-8') != content:
             raise SystemExit('Head layer data is out of date')
         print('OK: head layer data matches PNG exports and manifest')
     else:
-        OUTPUT.write_text(content)
+        OUTPUT.write_text(content, encoding='utf-8')
         print('Wrote ' + str(OUTPUT.relative_to(ROOT)))

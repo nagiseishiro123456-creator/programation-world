@@ -71,7 +71,7 @@ def decode_png(raw):
 
 
 def build():
-    catalog = json.loads(CATALOG_PATH.read_text())
+    catalog = json.loads(CATALOG_PATH.read_text(encoding='utf-8'))
     png = (ROOT / catalog['source']['path']).read_bytes()
     if hashlib.sha256(png).hexdigest() != catalog['source']['sha256']:
         raise ValueError('Atlas changed: review the catalog source hash first')
@@ -90,9 +90,9 @@ if __name__ == '__main__':
     args = parser.parse_args()
     output = build()
     if args.check:
-        if OUTPUT_PATH.read_text() != output:
+        if OUTPUT_PATH.read_text(encoding='utf-8') != output:
             raise SystemExit('Appearance snapshot is out of date')
         print('OK: appearance snapshot matches the PNG and catalog')
     else:
-        OUTPUT_PATH.write_text(output)
+        OUTPUT_PATH.write_text(output, encoding='utf-8')
         print('Wrote ' + str(OUTPUT_PATH.relative_to(ROOT)))

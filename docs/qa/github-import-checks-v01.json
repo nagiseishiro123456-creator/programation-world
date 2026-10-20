@@ -1,0 +1,239 @@
+{
+  "passed": true,
+  "date": "2026-10-20",
+  "environment": "V8 aislado de functions.exec; fuentes leídas desde GitHub",
+  "sourceCommit": "08071ebd869dddef62856ec791210ca5d688799f",
+  "checks": [
+    "Sintaxis de 14 archivos JavaScript",
+    "Snapshots de reposo, marcha, colores y capas coinciden con los JSON",
+    "120 composiciones: original exacto, ojos aprobados, cuerpo desde fila 22 e identidad de cabeza durante marcha",
+    "3 colores: transparencia, regiones protegidas y JSON de apariencia",
+    "Tiempo de cuadros, vuelta del ciclo y direcciones del movimiento"
+  ],
+  "testedCompositions": 120,
+  "jackets": 3,
+  "browserExecuted": false,
+  "nodeExecuted": false,
+  "pythonExecuted": false,
+  "sourcePngHashesRecomputed": false,
+  "controllerAdapter": {
+    "passed": true,
+    "environment": "V8 con adaptador DOM/Canvas mínimo",
+    "checks": [
+      "Inicio",
+      "Direcciones y colores",
+      "Reproducción",
+      "Paso manual y ciclo",
+      "Capas y restauración",
+      "Regreso a reposo"
+    ],
+    "browserExecuted": false,
+    "layoutTested": false,
+    "canvasPixelsTested": false
+  },
+  "scope": "Revisión de la importación a GitHub",
+  "sourceImportedFiles": 93,
+  "binaryBlobsToPreserve": 36,
+  "binaryBlobs": [
+    {
+      "path": "art/concepts/Z01/campus-avatar-v01.png",
+      "sha": "c8fd4cd11cb2441d8bb69b09f8e8f5f24f3cfae1",
+      "size": 2087001
+    },
+    {
+      "path": "art/concepts/avatars/avatar-base-01-v01.png",
+      "sha": "56548e3ddbbe6252fee44517963309250e28faa0",
+      "size": 1259401
+    },
+    {
+      "path": "art/concepts/avatars/avatar-base-01-v02.png",
+      "sha": "d4f481f51b6ebd01b07ec9bcef012e628d6cfb87",
+      "size": 1254732
+    },
+    {
+      "path": "art/concepts/avatars/avatar-base-01-v03.png",
+      "sha": "f055dfb2aa618a6b0d0b43dd5df8804a78335fe9",
+      "size": 1291104
+    },
+    {
+      "path": "art/concepts/avatars/avatar-base-01-v04.png",
+      "sha": "0a8a92f080a1d076a460093759606ec0657f0131",
+      "size": 1253001
+    },
+    {
+      "path": "art/concepts/avatars/avatar-base-01-walk-v01.png",
+      "sha": "e9a134a834571582502beaab0108dbd706f4fd09",
+      "size": 1846333
+    },
+    {
+      "path": "art/concepts/avatars/avatar-hair-options-v01.png",
+      "sha": "89dbe87306f22c02100e8d7dd38c507555afcff6",
+      "size": 1496070
+    },
+    {
+      "path": "art/concepts/avatars/avatar-head-layers-a-source-v01.png",
+      "sha": "eed9f960fb71d12f170de4a6b644573a3be1a2f3",
+      "size": 745665
+    },
+    {
+      "path": "art/concepts/avatars/avatar-head-layers-a-source-v02.png",
+      "sha": "3e1594a1f49bd83c9d941cbffd63fe43f0b59608",
+      "size": 735792
+    },
+    {
+      "path": "art/exports/avatars/avatar-base-01-walk-v01.png",
+      "sha": "380f181ad2458a5477b092ed3abae61b321e058f",
+      "size": 29226
+    },
+    {
+      "path": "art/exports/avatars/avatar-hair-sidepart-v01.png",
+      "sha": "72fb318c97b43b6ec3ee0247e75523495c944283",
+      "size": 3355
+    },
+    {
+      "path": "art/exports/avatars/avatar-neutral-head-v01.png",
+      "sha": "e2f0b229618dfa1e356e3d3f0312f6537c6a1cdd",
+      "size": 2168
+    },
+    {
+      "path": "art/references/originals/ref-01.jpg",
+      "sha": "62cc929827f5a00b12b0b0e8709186f535e4aaa3",
+      "size": 207270
+    },
+    {
+      "path": "art/references/originals/ref-02.jpg",
+      "sha": "22833c1467cc45d2ddb7085f4ff01303fdb8dd90",
+      "size": 140150
+    },
+    {
+      "path": "art/references/originals/ref-03.jpg",
+      "sha": "dffacc868154a4d63b815ea94288d101954b49a4",
+      "size": 147769
+    },
+    {
+      "path": "art/references/originals/ref-04.jpg",
+      "sha": "927913aa67a1b21a2f6927c99fbdb0bd1f3f1052",
+      "size": 176248
+    },
+    {
+      "path": "art/references/originals/ref-05.jpg",
+      "sha": "931876990c4cd10fb56731610833d8e6e0a355a7",
+      "size": 207243
+    },
+    {
+      "path": "art/references/originals/ref-06.jpg",
+      "sha": "868e1ca63ffe13d5f1d13f90775fdaef6d6674c9",
+      "size": 192016
+    },
+    {
+      "path": "art/references/originals/ref-07.jpg",
+      "sha": "b5fe7d9da46c61b9db3f861933139169f65935af",
+      "size": 237115
+    },
+    {
+      "path": "art/references/originals/ref-08.jpg",
+      "sha": "691f61e7cd9de5e24296dc1de65b1dc44118d78c",
+      "size": 202460
+    },
+    {
+      "path": "art/references/originals/ref-09.jpg",
+      "sha": "83c07d711f05826f132a9cd127808f3cb3272c73",
+      "size": 187528
+    },
+    {
+      "path": "art/references/originals/ref-10.jpg",
+      "sha": "c26a9326950fbf37d549c1ecc5529620d99a79a0",
+      "size": 180532
+    },
+    {
+      "path": "art/references/originals/ref-11.jpg",
+      "sha": "55a39cdb64eaffdf2a7129b3bcca8ecb1ca9bb80",
+      "size": 171133
+    },
+    {
+      "path": "art/references/originals/ref-12.jpg",
+      "sha": "28272901c926f71248ed41dbae6c96b64aa9d0e9",
+      "size": 205988
+    },
+    {
+      "path": "art/references/originals/ref-13.png",
+      "sha": "1785b92dc442bdb3472b5e442c703eceb4b251f6",
+      "size": 709150
+    },
+    {
+      "path": "art/references/originals/ref-14.png",
+      "sha": "c2bed33cccebd781cce4bfea054e9a97e4d01cde",
+      "size": 837391
+    },
+    {
+      "path": "art/references/originals/ref-15.png",
+      "sha": "4c97431b0e75d5ab9f9812f3d086ca8d641e2b4b",
+      "size": 886517
+    },
+    {
+      "path": "art/references/originals/ref-16.jpg",
+      "sha": "447d0ef1f53ea322edccd9fc0d98e753debfa732",
+      "size": 2359561
+    },
+    {
+      "path": "art/references/originals/ref-17.jpg",
+      "sha": "70f2eabeb4986b129bf91dff0f3ca34a1d63d546",
+      "size": 3053020
+    },
+    {
+      "path": "art/references/reviews/front-eye-layout-reference.png",
+      "sha": "358871d66ca6150d1b088c215b5740d7d39fa82d",
+      "size": 214409
+    },
+    {
+      "path": "docs/qa/avatar-customization-v01-comparison.png",
+      "sha": "8541f468d3d37773ffc6e06bb40e8be1b0832318",
+      "size": 64823
+    },
+    {
+      "path": "docs/qa/avatar-eyes-v04-comparison.png",
+      "sha": "f571096211b23792509b2c1f08ff2664785ff5a6",
+      "size": 25959
+    },
+    {
+      "path": "docs/qa/avatar-head-layers-a-v01-comparison.png",
+      "sha": "40298d3918e94b2752061242b7933a8c177d2860",
+      "size": 78333
+    },
+    {
+      "path": "docs/qa/avatar-head-layers-a-v01-draft.png",
+      "sha": "52a8aafa9c69a422410781fc0de4104e926b7862",
+      "size": 46896
+    },
+    {
+      "path": "docs/qa/avatar-walk-v01-contact-sheet.png",
+      "sha": "c20980560722134bd6d92b1c8f79d606f589b265",
+      "size": 59209
+    },
+    {
+      "path": "docs/qa/avatar-walk-v01-preview.mp4",
+      "sha": "5218b9c2afc24f53cd798744aa266a1a1053e878",
+      "size": 54087
+    }
+  ],
+  "localEnvironmentAvailable": false,
+  "archiveReopened": false,
+  "githubActions": {
+    "workflow": ".github/workflows/verify.yml",
+    "status": "pending_remote_execution",
+    "os": [
+      "ubuntu-latest",
+      "windows-latest"
+    ],
+    "node": "24",
+    "python": "3.13"
+  },
+  "manualVisualApproval": "pending_product_owner_review",
+  "repositoryIntegrity": {
+    "passed": true,
+    "files": 102,
+    "jsonFiles": 21,
+    "internalLinks": 125,
+    "errors": []
+  }
+}

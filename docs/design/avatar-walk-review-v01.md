@@ -59,4 +59,4 @@ La marcha ya está aceptada. Después de comprobar los archivos locales, el desa
 art: agregar primera marcha del avatar en cuatro direcciones
 ```
 
-El asistente no ejecutó commit ni push. El primer push sigue reservado para cuando se active GitHub.
+En la entrega original el asistente no ejecutó commit ni push. Desde el 2026-10-20 el repositorio está conectado y la autorización vigente permite incorporar los avances acordados.

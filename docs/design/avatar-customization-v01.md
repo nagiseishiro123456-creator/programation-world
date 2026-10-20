@@ -107,6 +107,6 @@ Al revisar los archivos de este paquete, el desarrollador puede guardar un commi
 feat: agregar prueba local de colores del avatar y registrar marcha aprobada
 ```
 
-Solo el desarrollador ejecuta commit y push. GitHub se conectará cuando lo decida el Product Owner.
+Desde el 2026-10-20 GitHub está conectado y el asistente tiene autorización para incorporar los avances acordados. Consultar la guía vigente de trabajo.
 
 Siguiente punto de diseño: revisar las dos formas de cabello de [avatar-hair-review-v01.md](avatar-hair-review-v01.md). Se propone conservar el peinado actual y añadir A o B tras su aceptación; la producción por capas y la integración se realizarán después.

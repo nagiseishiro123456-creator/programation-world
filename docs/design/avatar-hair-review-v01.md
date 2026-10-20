@@ -83,4 +83,4 @@ Después de revisar los archivos, el desarrollador puede guardar el estado local
 art: registrar colores aprobados y proponer primeros peinados
 ```
 
-Solo el desarrollador ejecuta commit y push. El siguiente trabajo es revisar la composición nativa de A y después extender la producción a B. No se vuelve a pedir la elección del catálogo ya aceptado.
+GitHub está conectado y el asistente tiene autorización para incorporar los avances acordados. El siguiente trabajo es revisar la composición nativa de A y después extender la producción a B. No se vuelve a pedir la elección del catálogo ya aceptado.

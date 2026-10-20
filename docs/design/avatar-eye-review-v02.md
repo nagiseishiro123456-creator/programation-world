@@ -35,7 +35,7 @@ La medición confirma la presencia del blanco en ese renderizador; la aprobació
 
 ## Estado de Scrum y Git
 
-S0-03 sigue abierta hasta revisar el resultado. Esta corrección no incorpora animación de marcha ni nuevos módulos del juego. El Product Owner realizará el commit local después de aprobar el aspecto. El push sigue reservado para el momento acordado de conectar el repositorio remoto.
+S0-03 sigue abierta hasta revisar el resultado. Esta corrección no incorpora animación de marcha ni nuevos módulos del juego. Esta entrega antecede a la conexión de GitHub. Desde el 2026-10-20 rige la autorización de incorporar los avances acordados, documentada en la guía de trabajo.
 
 Mensaje sugerido:
 

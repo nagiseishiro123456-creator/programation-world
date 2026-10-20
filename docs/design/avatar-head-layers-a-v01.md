@@ -108,4 +108,4 @@ Después de revisar este paquete, el desarrollador puede guardar un commit local
 feat: agregar primera prueba de cabeza y cabello A por capas
 ```
 
-El usuario sigue siendo quien realiza commit y push. No se requiere conectar GitHub para abrir el visor. Después corresponde producir B con este contrato comprobado y ampliar el selector y la compatibilidad del archivo de apariencia.
+El proyecto ya está en GitHub; el asistente tiene autorización para incorporar avances dentro del alcance acordado. El visor se abre desde una copia local. Después corresponde producir B con este contrato comprobado y ampliar el selector y la compatibilidad del archivo de apariencia.
